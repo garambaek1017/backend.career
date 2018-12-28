@@ -8,52 +8,76 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
 <script type="text/javascript">
-  
-</script>   
+
+</script>
+
+<script type="text/javascript">
+    WebFontConfig = {
+        custom: {
+            families: ['Nanum Gothic'],
+            urls: ['httpx://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    active: function() {
+      sessionStorage.fonts = true;
+    }
+</script>
 <style>
-    
-@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-    
-body,html {
-    height: 100%;
- /*   font-family: "Inconsolata", sans-serif;*/
-}
+    @import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
-p,h5,h6 {
-    font-family: 'Nanum Gothic Coding', serif;
-}
+    body,
+    html {
+        height: 100%;
+        font-family: "Nanum Gothic Coding", sans-serif;
+    }
 
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("./img/home_bg.JPG");
-    min-height: 90%;
-    opacity: 80%;
-}
+    p,
+    h5,
+    h6 {
+        font-family: 'Nanum Gothic Coding', serif;
+    }
 
-.menu {
-    display: none;
-}
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("./img/home_bg.JPG");
+        min-height: 90%;
+        opacity: 80%;
+    }
 
-.experience {
-    border-bottom: 4px solid #000000;
-    margin-top: 5px;
-}
+    .menu {
+        display: none;
+    }
 
-.explanation {
-    text-align: left;
-    margin-bottom: 10px;
-}
+    .experience {
+        border-bottom: 4px solid #000000;
+        margin-top: 5px;
+    }
 
-.gameImg {
-    width: 50%;
-    height: : auto;
-}
+    .explanation {
+        text-align: left;
+        margin-bottom: 10px;
+    }
 
-.gameTitle {
-    color: red;
-}
+    .gameImg {
+        width: 50%;
+        height: : auto;
+    }
+
+    .gameTitle {
+        color: red;
+    }
+
 </style>
 
 <body>
