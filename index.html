@@ -24,9 +24,20 @@ body, html {
 }
     
 .experience {
-  border-top: 4px solid #4caf50;
+  border-bottom: 4px solid #4caf50;
     margin-top: 5px;
 }
+    
+.explanation {
+    text-align: left;
+    margin-bottom: 10px;
+}
+    
+.gameImg {
+    width: 50%;
+    height: : auto;
+}
+    
 </style>
 <body>
 
@@ -40,10 +51,10 @@ body, html {
       <a href="#about" class="w3-button w3-block w3-green">ABOUT ME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#experience" class="w3-button w3-block w3-green">Project</a>
+      <a href="#experience" class="w3-button w3-block w3-green">PROJECT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#skill" class="w3-button w3-block w3-green">Skill</a>
+      <a href="#skill" class="w3-button w3-block w3-green">SKILL</a>
     </div>
   </div>
 </div>
@@ -66,7 +77,7 @@ body, html {
 
       <div style ="height: auto;" >
           <div style ="float:left; margin : auto;"  display: inline-block;>
-              <img src="./img/me4.jpg" style=" width:250px; height: 300px;" class="w3-margin-top">
+              <img src="./img/me5.jpg" style=" width:250px; height: 300px;" class="w3-margin-top">
               <img src="./img/me3.jpg" style=" width:250px; height: 300px; " class="w3-margin-top">
           </div>
             <div style ="float:left; margin-left: 15px; height: 300px;">
@@ -87,71 +98,102 @@ body, html {
 <div class="w3-container" id="experience">
   <div class="w3-content" style="max-width:900px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-green"> <i class="fa fa-gamepad" aria-hidden="true"></i> Project </span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-green"> <i class="fa fa-gamepad" aria-hidden="true"></i> PROJECT </span></h5>
     <div class="w3-container" style="text-align: center">
         
         <!-- Pocket -->
         <div class="w3-container experience">
           <h5 class="w3-opacity"><b>Heroes Pocket Arena</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018 </h6>
-          <p>Work : Server and Management tool Programming</p>
-          <p>Skill : nodejs, javascript, mysql</p>
-          <img src='./img/hero.jpg' height="auto" width="50%">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2018 ~ now </h6>
+          <div class ="explanation">
+            <p><b>Work</b> - Server and Management tool Programming</p>
+            <p><b>Skill</b> - nodejs, javascript, mysql</p>
+            <p><b>Detail</b> - I created a API server and a tool using node.js and I used mysql to save data and 
+              Server was built using AWS.</p>
+            <br>
+          </div>
+          
+          <img src='./img/hero.jpg' class="gameImg">
           <br>
           <a href="https://youtu.be/WFlbaMtDrxc" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
-          <br>
+          <br><br><br>
         </div>
         
         <!-- Cook2 -->
         <div class="w3-container experience">
+            <br>
           <h5 class="w3-opacity"><b>Cook2 </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
-          <p>Work : Server and Management tool Programming</p>
-          <p>Skill : c#, wcf, wpf, mysql, couchbase </p>
-          <img src='./img/cook2.png' height="auto" width="50%">
-          <hr>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/11 ~ 2018/05 </h6>
+          <div class ="explanation">
+            <p><b>Work</b> - Server and Management tool Programming</p>
+            <p><b>Skill</b> - c#, wcf, wpf, mysql, couchbase, ELK(Elasticsearch, Logstash, Kibana) </p>
+            <p><b>Detail</b> - The server implemented with wcf was maintained using c# and I used couchbase and mysqsl to save data and logs were saved using elk and served in Japan and I have maintained the game management tool with wpf and added new tasks and bug fixes when adding new content.</p>
+            <br>
+          </div>
+          
+          <img src='./img/cook2.png' class="gameImg">
+            <br><br>
         </div>
         
         <!--god of high-->
         <div class="w3-container experience">
+            <br>
           <h5 class="w3-opacity"><b>God of highSchool 2017</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
-          <p>Work : Server and Management tool Programming</p>
-          <p>Skill : c#, wcf, wpf, mysql, couchbase </p>
-          <img src='./img/goh.jpg' height="auto" width="50%">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/01 ~ 2017/11 </h6>
+          <div class ="explanation">
+            <p><b>Work</b> - Server and Management tool Programming</p>
+              <p><b>Skill</b> - c#, wcf, mysql, redis, asp.net </p>
+              <p><b>Detail</b> - The server implemented with wcf was maintained using c# and I used mysqsl and redis to save data and The administration tools were created in asp.net and c#. I have added or bug fixes to add new content. </p>
+            <br>
+          </div>
+          
+          <img src='./img/goh.jpg' class="gameImg">
           <br>
           <a href="https://www.youtube.com/embed/VzFLn0hI-sw" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
+            <br><br><br>
         </div>
         
         <!--우영-->
         <div class="w3-container experience">
+            <br>
           <h5 class="w3-opacity"><b>우리가 영웅이다</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2016</h6>
-          <p>Work : Management tool Programming</p>
-          <p>Skill : java, gwt</p>
-          <img src='./img/wearehero.jpg' height="auto" width="50%">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/12 - 2016/08 </h6>
+          <div class ="explanation">
+            <p> <b>Work</b> - Management tool Programming </p>
+            <p> <b>Skill</b> - java, GWT(google web toolkit) </p>
+            <p> <b>Detail</b> - I created web administration tool for the game using GWT. </p>
+            <br>
+          </div>
+            
+          <img src='./img/wearehero.jpg' class="gameImg">
           <br>
           <a href="https://www.youtube.com/embed/FUHc0-bgLF4" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
+            <br><br><br>
         </div>
         
-        <!--우영-->
+        <!--강기-->
          <div class="w3-container experience">
+             <br>
           <h5 class="w3-opacity"><b>강철의 기사</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2016</h6>
-          <p>Work : Server and Management tool Programming</p>
-          <p>Skill : c#, mssql, java, spring </p>
-          <img src='./img/ironknight.jpg' height="auto" width="50%">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/02 - 2016/08</h6>
+          <div class ="explanation">    
+            <p> <b>Work</b> - Server and Management tool Programming</p>
+            <p> <b>Skill</b> - c#, mssql, java, spring </p>
+            <p> <b>Detail</b> - Server maintenance, maintenance of operation tools, addition of new functions due to addition of new content, and bug fix. </p>
+            <br>
+          </div>
+              <img src='./img/ironknight.jpg' class="gameImg">
           <br>
           <a href="https://www.youtube.com/embed/y8JGLfDO7q8" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
-             
+             <br><br><br>
         </div>
     </div>
 </div>
@@ -163,12 +205,11 @@ body, html {
         
         <span class="w3-tag w3-wide w3-green">
             <i class="fa fa-code" aria-hidden="true"></i>
-            Skill
+            SKILL
         </span>
       </h5>
     <p>
-        <span class="w3-tag">c#</span>
-        <span class="w3-tag">c++</span>
+        <span class="w3-tag">c# asp.net</span>
         <span class="w3-tag">java</span>
         <span class="w3-tag">javascript</span>
         <span class="w3-tag">jquery</span>
