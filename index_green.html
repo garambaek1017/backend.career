@@ -18,14 +18,13 @@ body, html {
   background-size: cover;
   background-image: url("./img/home_bg.JPG");
   min-height: 75%;
-  opacity: 80%;
 }
 .menu {
   display: none;
 }
     
 .experience {
-  border-bottom: 4px solid #000000;
+  border-bottom: 4px solid #4caf50;
     margin-top: 5px;
 }
     
@@ -38,28 +37,24 @@ body, html {
     width: 50%;
     height: : auto;
 }
-.gameTitle {
-    color: red;
-}
-
     
 </style>
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+  <div class="w3-row w3-padding w3-green">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      <a href="#" class="w3-button w3-block w3-green">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+      <a href="#about" class="w3-button w3-block w3-green">ABOUT ME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#experience" class="w3-button w3-block w3-black">PROJECT</a>
+      <a href="#experience" class="w3-button w3-block w3-green">PROJECT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#skill" class="w3-button w3-block w3-black">SKILL</a>
+      <a href="#skill" class="w3-button w3-block w3-green">SKILL</a>
     </div>
   </div>
 </div>
@@ -78,7 +73,7 @@ body, html {
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:900px">
     <h5 class="w3-center w3-padding-64">
-        <span class="w3-tag w3-wide w3-black"> <i class="fa fa-user" aria-hidden="true"></i> ABOUT ME</span></h5>
+        <span class="w3-tag w3-wide w3-green"> <i class="fa fa-user" aria-hidden="true"></i> ABOUT ME</span></h5>
 
       <div style ="height: auto;" >
           <div style ="float:left; margin : auto;"  display: inline-block;>
@@ -100,16 +95,16 @@ body, html {
 </div>
 
 <!-- Experience Container -->
-<div class="w3-container" id="experience" style="margin-top: 50px;">
+<div class="w3-container" id="experience">
   <div class="w3-content" style="max-width:900px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-black"> <i class="fa fa-gamepad" aria-hidden="true"></i> PROJECT </span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-green"> <i class="fa fa-gamepad" aria-hidden="true"></i> PROJECT </span></h5>
     <div class="w3-container" style="text-align: center">
         
         <!-- Pocket -->
         <div class="w3-container experience">
-          <h5 ><b style="color: black">Heroes Pocket Arena</b></h5>
-          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2018 ~ now </h6>
+          <h5 class="w3-opacity"><b>Heroes Pocket Arena</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2018 ~ now </h6>
           <div class ="explanation">
             <p><b>Work</b> - Server and administration tool Programming</p>
             <p><b>Skill</b> - node.js, javascript, mysql</p>
@@ -123,7 +118,7 @@ body, html {
           
           <img src='./img/hero.jpg' class="gameImg">
           <br>
-          <a href="https://youtu.be/WFlbaMtDrxc" title="W3.CSS" target="_blank" class="w3-hover-text-black">
+          <a href="https://youtu.be/WFlbaMtDrxc" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
           <br><br><br>
@@ -132,8 +127,8 @@ body, html {
         <!-- Cook2 -->
         <div class="w3-container experience">
             <br>
-          <h5><b style="color: black">Cook2 </b></h5>
-          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/11 ~ 2018/05 </h6>
+          <h5 class="w3-opacity"><b>Cook2 </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/11 ~ 2018/05 </h6>
           <div class ="explanation">
             <p><b>Work</b> - Server and administration tool Programming</p>
             <p><b>Skill</b> - c#, wcf, wpf, mysql, couchbase, ELK(Elasticsearch, Logstash, Kibana) </p>
@@ -153,9 +148,9 @@ body, html {
         
         <!--god of high-->
         <div class="w3-container experience">
-          <br>
-          <h5><b style="color:black">God of highSchool 2017</b></h5>
-          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/01 ~ 2017/11 </h6>
+            <br>
+          <h5 class="w3-opacity"><b>God of highSchool 2017</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2017/01 ~ 2017/11 </h6>
           <div class ="explanation">
               <p><b>Work</b> - Server and Management tool Programming</p>
               <p><b>Skill</b> - c#, wcf, mysql, redis, asp.net </p>
@@ -170,7 +165,7 @@ body, html {
           
           <img src='./img/goh.jpg' class="gameImg">
           <br>
-          <a href="https://www.youtube.com/embed/VzFLn0hI-sw" title="W3.CSS" target="_blank" class="w3-hover-text-black">
+          <a href="https://www.youtube.com/embed/VzFLn0hI-sw" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
             <br><br><br>
@@ -179,8 +174,8 @@ body, html {
         <!--우영-->
         <div class="w3-container experience">
             <br>
-          <h5><b style="color: black">우리가 영웅이다</b></h5>
-          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/12 - 2016/08 </h6>
+          <h5 class="w3-opacity"><b>우리가 영웅이다</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/12 - 2016/08 </h6>
           <div class ="explanation">
              <p><b>Work</b> - Management tool Programming </p>
              <p><b>Skill</b> - java, GWT(google web toolkit), mssql</p>
@@ -194,7 +189,7 @@ body, html {
             
           <img src='./img/wearehero.jpg' class="gameImg">
           <br>
-          <a href="https://www.youtube.com/embed/FUHc0-bgLF4" title="W3.CSS" target="_blank" class="w3-hover-text-black">
+          <a href="https://www.youtube.com/embed/FUHc0-bgLF4" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
             <br><br><br>
@@ -203,8 +198,8 @@ body, html {
         <!--강기-->
          <div class="w3-container experience">
              <br>
-          <h5><b style="color: black">강철의 기사</b></h5>
-          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/02 - 2016/08</h6>
+          <h5 class="w3-opacity"><b>강철의 기사</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/02 - 2016/08</h6>
           <div class ="explanation">    
             <p><b>Work</b> - Server and Management tool Programming</p>
             <p><b>Skill</b> - c#, mssql, java, spring </p>
@@ -217,7 +212,7 @@ body, html {
           </div>
               <img src='./img/ironknight.jpg' class="gameImg">
           <br>
-          <a href="https://www.youtube.com/embed/y8JGLfDO7q8" title="W3.CSS" target="_blank" class="w3-hover-text-black">
+          <a href="https://www.youtube.com/embed/y8JGLfDO7q8" title="W3.CSS" target="_blank" class="w3-hover-text-green">
               <i class="fa fa-video-camera" aria-hidden="true"></i> play video
           </a>
              <br><br><br>
@@ -226,17 +221,17 @@ body, html {
 </div>
 
 <!-- Skill -->
-<div class="w3-container" id="skill" style="padding-bottom:32px; margin-top: 50px;">
+<div class="w3-container" id="skill" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48">
-        <span class="w3-tag w3-wide w3-black">
+        
+        <span class="w3-tag w3-wide w3-green">
             <i class="fa fa-code" aria-hidden="true"></i>
             SKILL
         </span>
       </h5>
     <p>
-        - c#, asp.net, wpf, java, javascript, jquery, node.js, spring <br>
-        <!--<span class="w3-tag">c# asp.net</span>
+        <span class="w3-tag">c# asp.net</span>
         <span class="w3-tag">java</span>
         <span class="w3-tag">javascript</span>
         <span class="w3-tag">jquery</span>
@@ -245,10 +240,8 @@ body, html {
         <span class="w3-tag">mysql</span>
         <span class="w3-tag">mssql</span>
         <span class="w3-tag">redis</span>
-        <span class="w3-tag">couchbase</span>-->
-    </p> 
-      <p> - mysql, mssql, redis, couchbase
-      </p>
+        <span class="w3-tag">couchbase</span>
+    </p>
       <img src='./img/map.jpg' height="auto" width="100%">
   </div>
 </div>
@@ -260,7 +253,7 @@ body, html {
     <div id = "footer" style="text-align: center">
         <p>Thank you for reading ^^</p>
         <p><i class="fa fa-envelope-o fa-fw w3-margin-right"></i> email : <a href="mailto:bgr1017@naver.com">garam baek</a> </p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> blog  : <a href="https://podo1017.tistory.com" title="W3.CSS" target="_blank" class="w3-hover-text-black">  http://podo1017.tistory.com</a></p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> blog  : <a href="https://podo1017.tistory.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">  http://podo1017.tistory.com</a></p>
     </div>
 </footer>
 
