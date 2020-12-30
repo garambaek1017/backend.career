@@ -1,367 +1,239 @@
-<!DOCTYPE html>
-<html>
-<title>Garam Baek's web site</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HotJJory - Portflio </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<script type="text/javascript">
-    WebFontConfig = {
-        custom: {
-            families: ['Nanum Gothic'],
-            urls: ['httpx://fonts.googleapis.com/earlyaccess/nanumgothic.css']
-        }
-    };
-    (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-    active: function() {
-      sessionStorage.fonts = true;
-    }
-</script>
-<style>
-    @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+    <!-- template -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
 
-    body,
-    html {
-        height: 100%;
-        font-family: "Nanum Gothic Coding", sans-serif;
-    }
-
-    p,
-    h5,
-    h6 {
-        font-family: 'Nanum Gothic Coding', serif;
-    }
-
-    .bgimg {
-        background-position: center;
-        background-size: cover;
-        background-image: url("./img/home_bg.JPG");
-        min-height: 90%;
-        opacity: 80%;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .experience {
-        border-bottom: 4px solid #000000;
-        margin-top: 5px;
-    }
-
-    .explanation {
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .gameImg {
-        width: 50%;
-        height: : auto;
-    }
-
-    .gameTitle {
-        color: red;
-    }
-
-</style>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
 
 <body>
-    <!-- Links (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s2">
-                <a href="#" class="w3-button w3-block w3-black">HOME</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#experience" class="w3-button w3-block w3-black">PROJECT</a>
-            </div>
-            <div class="w3-col s2">
-                <a href="#skill" class="w3-button w3-block w3-black">SKILL</a>
-            </div>
-          <!--  <div class="w3-col s2">
-                <a href="./index.html" class="w3-button w3-block w3-black">KR</a>
-            </div>-->
-            <div class="w3-col s2">
-                <a href="./index_eng.html" class="w3-button w3-block w3-black">ENG</a>
-            </div>
-        </div>
-    </div>
+    <!-- 큰 틀-->
+    <div id="colorlib-page">
+		
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+            <h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/bgr/main.jpg);"></span>Garam Baek</a></h1>
+            <nav id="colorlib-main-menu" role="navigation">
+                <ul>
+                    <li class="colorlib-active"><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Carrer & Profile</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+		</aside>
 
-    <!-- Header with image -->
-    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-middle w3-center">
-            <span class="w3-text-white" style="font-size:90px">Keep Moving</span>
-        </div>
-    </header>
+        <div id="colorlib-main">
+            <section class="ftco-section-no-padding bg-light">
+                <div class="hero-wrap">
+                    <div class="overlay"></div>
+                    <div class="d-flex align-items-center js-fullheight">
+                        <div class="author-image text img d-flex">
+                            <section class="home-slider js-fullheight owl-carousel">
+                                <div class="slider-item js-fullheight" style="background-image: url(images/bgr/gr1.jpg);">
+                                </div>
 
-    <!-- Add a background color and large text to the whole page -->
-    <div class="w3-sand w3-light-grey w3-large">
-
-        <!-- About Container -->
-        <div class="w3-container" id="about">
-            <div class="w3-content" style="max-width:900px">
-                <h5 class="w3-center w3-padding-64">
-                    <span class="w3-tag w3-wide w3-black"> <i class="fa fa-user" aria-hidden="true"></i> ABOUT ME</span></h5>
-
-                <div style="height: auto; text-align: center; vertical-align:middle;">
-                    <div style="float:left; margin : auto;" display: inline-block;>
-                        <img src="./img/me6.jpg" style=" width:250px; height: 300px;" class="w3-margin-top">
-                        <img src="./img/me3.jpg" style=" width:250px; height: 300px; " class="w3-margin-top">
-                    </div>
-                    <div style="float:left; margin-left: 15px; height: 300px; text-align: left;">
-                        <p>
-                            ◎ 이름 : 백 가람 <br>
-                            ◎ 직업 : 프로그래머 <br>
-                            ◎ 취미 : 요리와 여행 <br>
-                            ◎ 흥미 : 웹 & 서버 프로그래밍  <br>
-                            ◎ E-mail : <a href="mailto:bgr1017@naver.com"> bgr1017@naver.com </a> <br>
-                            ◎ Blog : <a href="https://podo1017.tistory.com"> 클릭 </a> <br>
-                        </p>
+                                <div class="slider-item js-fullheight" style="background-image:url(images/bgr/gr2.jpg);">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="author-info text p-3 p-md-5">
+                            <div class="desc">
+                                <span class="subheading">Hello! I'm</span>
+                                <h1 class="big-letter">Garam Baek</h1>
+                                <h1 class="mb-4">
+                                    <span>Garam Baek</span>
+                                    <br>Server and Backend developer.
+                                </h1>
+                                <p class="mb-4">
+                                    안녕하세요 저는 서버 개발자 백가람입니다. 주로 C#을 사용해서 개발중입니다.
+                                    <br>
+                                    현재는 <span class="font-italic">피트니스앱</span> 개발을 하고 있습니다.
+                                    그전에는 게임 서버 개발과 관리자용 website를 만들었습니다.
+                                    <br />
+                                    <br />
+                                    <span style="color:#0094ff"> #여행 #운동 #고양이 #영화보기 #책읽기</span>
+                                    <br />
+                                    <span style="color:#0094ff"> #밝음 #유쾌</span>
+                                    <!--<p class="mb-4">I am A Photographer from America Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+                                    <h3 class="signature h1">garam baek</h3>
+                                    <ul class="ftco-social mt-3">
+                                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                        <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
+                                        <li class="ftco-animate"><a href="#"><span class="icon-web"></span></a></li>
+                                    </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- Experience Container -->
-        <div class="w3-container" id="experience">
-            <div class="w3-content" style="max-width:900px">
 
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-black"> <i class="fa fa-gamepad" aria-hidden="true"></i> PROJECT </span></h5>
-                <div class="w3-container" style="text-align: center">
-
-                    <!-- Hyper casual  -->
-                    <div class="w3-container experience">
-                        <h5><b style="color: black"> 하이퍼 캐쥬얼 개발  </b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>기간 - 2019/1 ~ 진행중 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - 하이퍼 캐쥬얼 모바일 게임 개발 <br>
-                            </p>
-                            <p><b>기술</b> <br>
-                                - c#, unity </p>
-                            <p><b>상세</b> <br>
-                                - 유니티를 사용하여 경량 게임 개발<br>
-                            </p>
-                            <p><b>사용 툴</b> <br>
-                                - unity <br>                               
-                            </p>
-                            <br>
+            <section class="ftco-section instagram">
+                <div class="container">
+                    <div class="row justify-content-center mb-2 pb-3">
+                        <div class="col-md-7 heading-section heading-section-2 text-center ftco-animate">
+                            <h2 class="mb-4">Activity</h2>
                         </div>
-                        <br><br><br>
                     </div>
-                    
-                    <!-- Mgo -->
-                    <div class="w3-container experience">
-                        <h5><b style="color: black"> 하이퍼 캐쥬얼 게임 공용 API 관리 </b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>기간 - 2018 ~ 진행중 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - API 서버와 운영툴 개발/유지&보수 <br>
-                                  &nbsp ㄴ 랭킹 API & 모어게임 API <br>
-                                  &nbsp ㄴ 관련 웹 페이지 개발  <br>
-                                - 관련 DB 관리 
-                            </p>
-                            <p><b>기술</b> <br>
-                                - node.js, javascript, mysql</p>
-                            <p><b>상세</b> <br>
-                                - node.js : api 서버와 운영툴 제작<br>
-                                - mysql : 게임·로그 데이터 저장 <br>
-                                - api 서버와 운영툴을 제작하여 AWS에 올려서 서비스 중<br>
-                            </p>
-                            <p><b>사용 툴</b> <br>
-                                - php 스톰, mysql workbench <br>                               
-                            </p>
-                            <br>
+                    <div class="row no-gutters">
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/bgr/gr_climb.jpg" class="insta-img image-popup" style="background-image: url(images/bgr/gr_climb.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
                         </div>
-                        <br><br><br>
-                    </div>
-                    
-                    <!-- Pocket -->
-                    <div class="w3-container experience">
-                        <h5><b style="color: black">히어로즈 : 포켓 아레나</b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>기간 - 2018 ~ 진행중 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - API 서버와 운영툴 개발/유지&보수<br>
-                                - 관련 DB 관리 </p>
-                            <p><b>기술</b> <br>
-                                - node.js, javascript, mysql</p>
-                            <p><b>상세</b> <br>
-                                - node.js : api 서버와 운영툴 제작<br>
-                                - mysql : 게임·로그 데이터 저장 <br>
-                                - api 서버와 운영툴을 제작하여 AWS에 올려서 서비스 중<br>
-                            </p>
-                             <p><b>사용 툴</b> <br>
-                                - php 스톰, mysql workbench <br>                               
-                            </p>
-                            <br>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/bgr/gr_horse.jpg" class="insta-img image-popup" style="background-image: url(images/bgr/gr_horse.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
                         </div>
-
-                        <img src='./img/hero.jpg' class="gameImg">
-                        <br>
-                        <a href="https://youtu.be/WFlbaMtDrxc" title="W3.CSS" target="_blank" class="w3-hover-text-black">
-                            <i class="fa fa-video-camera" aria-hidden="true"></i> play video
-                        </a>
-                        <br><br><br>
-                    </div>
-
-                    <!-- Cook2 -->
-                    <div class="w3-container experience">
-                        <br>
-                        <h5><b style="color: black">Cook2 마법의 레시피</b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>기간 - 2017/11 ~ 2018/05 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - 서버와 운영툴 프로그래밍</p>
-                            <p><b>기술</b> <br>
-                                - c#, wcf, wpf, mysql, couchbase, ELK(Elasticsearch, Logstash, Kibana), redis </p>
-                            <p><b>상세</b> <br>
-                                - c#, wcf : 게임 서버 유지·보수 및 컨텐츠 추가<br>
-                                - wpf : 운영툴 유지·보수 및 컨텐츠 추가<br>
-                                - coushbase, mysql : 게임 데이터·상점의 로그 데이터 저장 <br>
-                                - ELK : 게임 활동 로그 저장 및 확인<br>
-                                - redis : 랭킹 관련 데이터 저장<br>
-                                - 서버와 운영툴 유지·보수 및 버그 수정 그리고 새로운 컨텐츠 추가에 따른 제작<br>
-                            </p>
-                             <p><b>사용 툴</b> <br>
-                                - visual studio, mysql workbench <br>                               
-                            </p>
-                            <br>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/bgr/gr_satang.jpg" class="insta-img image-popup" style="background-image: url(images/bgr/gr_satang.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
                         </div>
-
-                        <img src='./img/cook2.png' class="gameImg">
-                        <br><br>
-                    </div>
-
-                    <!--god of high-->
-                    <div class="w3-container experience">
-                        <br>
-                        <h5><b style="color:black">갓오하 2017</b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>기간 - 2017/01 ~ 2017/11 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - 서버와 운영툴 프로그래밍</p>
-                            <p><b>기술</b> <br>
-                                - c#, wcf, mysql, redis, asp.net </p>
-                            <p><b>상세</b> <br>
-                                - c#, wcf : 게임 서버 유지·보수 및 컨텐츠 추가<br>
-                                - asp.net, c# : 운영툴 유지·보수 및 컨텐츠 추가<br>
-                                - mysql, redis : 게임 데이터·로그 데이터 저장, 유저 세션 관리, 랭킹 정보 저장<br>
-                                - 서버와 운영툴 유지·보수 및 버그 픽스 그리고 새로운 컨텐츠 추가에 따른 제작<br>
-                            </p>
-                            <p><b>사용 툴</b> <br>
-                                - visual studio, mysql workbench <br>                               
-                            </p>
-                            <br>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/bgr/gr_surfing.jpg" class="insta-img image-popup" style="background-image: url(images/bgr/gr_surfing.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
                         </div>
-
-                        <img src='./img/goh.jpg' class="gameImg">
-                        <br>
-                        <a href="https://www.youtube.com/embed/VzFLn0hI-sw" title="W3.CSS" target="_blank" class="w3-hover-text-black">
-                            <i class="fa fa-video-camera" aria-hidden="true"></i> play video
-                        </a>
-                        <br><br><br>
-                    </div>
-
-                    <!--우영-->
-                    <div class="w3-container experience">
-                        <br>
-                        <h5><b style="color: black">우리가 영웅이다</b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/12 - 2016/08 </h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - 운영툴 프로그래밍 </p>
-                            <p><b>기술</b> <br>
-                                - java, GWT(google web toolkit), mssql</p>
-                            <p><b>상세</b><br>
-                                - java, GWT : 운영툴 제작<br>
-                                - mssql : 유저 데이터 저장 <br>
-                                - java와 gwt를 사용하여 게임관리용 운영툴 제작 <br>
-                            </p>
-                             <p><b>사용 툴</b> <br>
-                                - eclipse, sqlserver <br>                               
-                            </p>
-                            <br>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/bgr/gr_boxing.jpg" class="insta-img image-popup" style="background-image: url(images/bgr/gr_boxing.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
                         </div>
-
-                        <img src='./img/wearehero.jpg' class="gameImg">
-                        <br>
-                        <a href="https://www.youtube.com/embed/FUHc0-bgLF4" title="W3.CSS" target="_blank" class="w3-hover-text-black">
-                            <i class="fa fa-video-camera" aria-hidden="true"></i> play video
-                        </a>
-                        <br><br><br>
-                    </div>
-
-                    <!--강기-->
-                    <div class="w3-container experience">
-                        <br>
-                        <h5><b style="color: black">강철의 기사</b></h5>
-                        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Term - 2015/02 - 2016/08</h6>
-                        <div class="explanation">
-                            <p><b>업무</b> <br>
-                                - 서버와 운영툴 제작</p>
-                            <p><b>기술</b> <br>
-                                - c#, mssql, java, spring </p>
-                            <p><b>상세</b> <br>
-                                - c# : 게임 서버 유지·보수<br>
-                                - java, spring : 운영툴 유지·보수 <br>
-                                - 서버와 운영툴 유지·보수 및 버그 픽스 그리고 새로운 컨텐츠 추가에 따른 제작<br>
-                            </p>
-                             <p><b>사용 툴</b> <br>
-                                - visual studio, eclipse, sqlserver <br>                               
-                            </p>
-                            <br>
-                        </div>
-                        <img src='./img/ironknight.jpg' class="gameImg">
-                        <br>
-                        <a href="https://www.youtube.com/embed/y8JGLfDO7q8" title="W3.CSS" target="_blank" class="w3-hover-text-black">
-                            <i class="fa fa-video-camera" aria-hidden="true"></i> play video
-                        </a>
-                        <br><br><br>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Skill -->
-            <div class="w3-container" id="skill" style="padding-bottom:32px; margin-top: 50px;">
-                <div class="w3-content" style="max-width:700px">
-                    <h5 class="w3-center w3-padding-48">
-                        <span class="w3-tag w3-wide w3-black">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                            SKILL
-                        </span>
-                    </h5>
-                    <p> - c#, asp.net, wpf, java, javascript, jquery, node.js, spring </p> <br>
-                    <p> - mysql, mssql, redis, couchbase</p>
-                    <img src='./img/map.jpg' height="auto" width="100%">
+            <section class="ftco-section instagram">
+                <div class="container">
+                    <div class="row justify-content-center mb-2 pb-3">
+                        <div class="col-md-7 heading-section heading-section-2 text-center ftco-animate">
+                            <h2 class="mb-4">MyCat</h2>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/cat/cat1.jpg" class="insta-img image-popup" style="background-image: url(images/cat/cat1.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/cat/cat2.jpg" class="insta-img image-popup" style="background-image: url(images/cat/cat2.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/cat/cat3.jpg" class="insta-img image-popup" style="background-image: url(images/cat/cat3.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/cat/cat4.jpg" class="insta-img image-popup" style="background-image: url(images/cat/cat4.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md ftco-animate">
+                            <a href="images/cat/cat5.jpg" class="insta-img image-popup" style="background-image: url(images/cat/cat5.jpg);">
+                                <div class="icon d-flex justify-content-center">
+                                    <span class="icon-instagram align-self-center"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-            <div id="footer" style="text-align: center">
-                <p>읽어주셔서 감사합니다 ^.^</p>
-                <p><i class="fa fa-envelope-o fa-fw w3-margin-right"></i> email : <a href="mailto:bgr1017@naver.com">백 가람</a> </p>
-                <p><i class="fa fa-home" aria-hidden="true"></i> blog : <a href="https://podo1017.tistory.com" title="W3.CSS" target="_blank" class="w3-hover-text-black"> http://podo1017.tistory.com</a></p>
-            </div>
-        </footer>
+            <footer class="ftco-footer ftco-bg-dark ftco-section">
+                <div class="container px-md-5">
+                    <div class="row mb-5">
+                        <div class="col-md">
+                            <div class="ftco-footer-widget mb-4">
+                                <h2 class="ftco-heading-2">Have a Questions?</h2>
+                                <div class="block-23 mb-3">
+                                    <ul>
+                                        <li><span class="icon icon-map-marker"></span><span class="text"> SEOUL, KOREA</span></li>
+                                        <li><a href="contact.html"><span class="icon icon-envelope"></span><span class="text">bgr1017.kr@gmail.com</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
+            </footer>
+
+        </div><!-- END COLORLIB-MAIN -->
+    </div><!-- END COLORLIB-PAGE -->
+    <!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+	
+    <!--<script src="MyJs.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/bgrJS.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    
 </body>
-
 </html>
