@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	
+	<script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -154,7 +156,22 @@
                             <h2 class="w3-text-grey w3-padding-16"> <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience </h2>
 
                             <div class="w3-container">
-                                <h3 class="w3-text-grey"> 5년 7개월 </h3>
+								<p id="totalDate"></p>
+                                <script type="text/javascript">
+									 $(document).ready(function () {
+
+                                        //자동으로 계산해주는 로직 추가 하기
+
+										var startDate = new Date(2015,2);
+                                        var currentDate = new Date();
+                                        
+                                        var year = currentDate.getFullYear() - startDate.getFullYear();
+                                        var month = currentDate.getMonth() - startDate.getMonth();
+                                        
+                                        var str = "<h5 class='w3-opacity'><b>" +"총 " + year +"년 " + month +"개월" + "</b></h5>";
+										document.getElementById("totalDate").innerHTML = str;
+									});
+								</script>
                             </div>
 
 
