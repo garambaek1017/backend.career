@@ -17,10 +17,15 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 
 
 <body>
+
 
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
@@ -28,7 +33,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.html"></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +43,15 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
+						<ul class="nav navbar-nav menu_nav justify-content-center">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="#workExperience">WorkExperience</a></li>
 							<li class="nav-item"><a class="nav-link" href="#skillStack">SkillStack</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
-							<li class="nav-item"><a class="nav-link" href="https://podo1017.tistory.com/">Tistory</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://podo1017.tistory.com/">Tistory</a>
+							<li class="nav-item"><a class="nav-link" href="https://github.com/garambaek1017/BGRServer">Github</a>
+							</li>
 							<!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
 						</ul>
 					</div>
@@ -54,42 +61,92 @@
 	</header>
 	<!--================ End Header Area =================-->
 
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Garam Baek</h1>
-							<h5 class="text-uppercase">senior Server developer</h5>
-
-							<!-- 이력서 작성후 추가-->
-							<!-- <div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Download CV (Resume)</span></a>
-								<a class="primary_btn tr-bg" href="#"><span>Contact</span></a>
-							</div> -->
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
-
 	<!--================ Start About Us Area =================-->
 	<section class="about_area section_gap" id="about">
 		<div class="container">
 			<div class="row justify-content-start align-items-center">
 				<div class="col-lg-5">
 					<div class="about_img">
-						<img src="img/instar1.png" alt="">
+						<img src="img/instar3.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>행하는자는 성취하고 걷는자는 도달한다</h2>
+						<p>
+							안녕하세요, 서버 개발자 백가람입니다. 주로 C#을 사용하여 개발중입니다.
+						</p>
+						<p>
+							현재는 피트니스 앱 '야핏 사이클' 서버 개발팀에서 일하고 있습니다. <br>
+							이전에는 다수의 게임 회사에서 서버 프로그래머로 근무하였습니다. <br>
+							취미는 복싱, 등산, 산책입니다. 그외에도 다양한 취미를 가지고 있습니다. <br>
+						</p>
+						<span style="color:#0094ff"> #여행 #운동 #OTT #</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!-- 오각형, 보류 -->
+	<!--================ Start About Us Area =================-->
+	<!-- <section class="about_area section_gap" id="about">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+
+						<canvas id="radar-chart" width="200" height="200"></canvas>
+						<script>
+
+							const data = {
+								labels: [
+									'Eating',
+									'Drinking',
+									'Sleeping',
+									'Designing',
+									'Coding',
+								],
+								datasets: [{
+									label: 'My First Dataset',
+									data: [80, 88, 81, 82, 83],
+									fill: true,
+									backgroundColor: 'rgba(255, 99, 132, 0.2)',
+									borderColor: 'rgb(255, 99, 132)',
+									pointBackgroundColor: 'rgb(255, 99, 132)',
+									pointBorderColor: '#fff',
+									pointHoverBackgroundColor: '#fff',
+									pointHoverBorderColor: 'rgb(255, 99, 132)'
+								}]
+							};
+							const config = {
+								type: 'radar',
+								data: data,
+								options: {
+									scale: {
+										r: {
+											angleLines: {
+												display: true
+											},
+											suggestedMin: 50,
+											suggestedMax: 100
+										}
+									},
+									elements: {
+										line: {
+											borderWidth: 3
+										}
+									}
+								},
+							};
+
+							var ctx = document.getElementById('radar-chart');
+							var radderChart = new Chart(ctx, config);
+						</script>
+
 					</div>
 				</div>
 
@@ -106,87 +163,102 @@
 
 							이전에는 다수의 게임 회사에서 서버 프로그래머로 근무하였습니다. <br>
 
-							취미는 복싱, 등산, 여행, 영화감상 등등 다양한 취미를 가지고 있고 <br>
+							취미는 복싱, 등산, 여행 등등 다양한 취미를 가지고 있고 <br>
 
 							좌우명은 "Keep Moving" 입니다.
 						</p>
-						<span style="color:#0094ff"> #여행 #운동 #영화감상 #Love고양이 </span>
+						<span style="color:#0094ff"> #여행 #운동 #OTT </span>
 
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
+	<!--================ Start About Us Area =================-->
 
-	<!--================ End About Us Area =================-->
+
+
+
 
 	<!--================ Srart WorkExperience Area =================-->
-		<section class="brand_area section_gap " id="workExperience">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<div class="main_title">
-							<h2>Work Experience</h2>
-						</div>
+	<section class="brand_area section_gap " id="workExperience">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>Work Experience</h2>
 					</div>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo2.png" alt="">
-									</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo2.png" alt="">
+									<br>
+									2015/02 - 2016/08			
 								</div>
+							
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo1.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo3.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo4.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo5.png" alt="">
-									</div>
-								</div>
-							</div>
-
 						</div>
-					</div>
-					<div class="offset-lg-2 col-lg-4 col-md-6">
-						<div class="client-info">
-							<div class="d-flex mb-50">
-								<span class="lage">
-									<script>
-										var totalYear = new Date().getFullYear() - 2015;
-										document.write(totalYear);
-									</script>
-								</span>
-								<span class="smll">Years Experience Working, until now</span>
+						
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo1.png" alt="">
+									<br>
+									2017/01 - 2017/11
+								</div>
 							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo3.png" alt="">
+									<br>
+									2017/11 - 2019/03
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo4.png" alt="">
+									<br>
+									2019/03 - 2020/03
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo5.png" alt="">
+									<br>
+									2020/04 - 재직중
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">
+								<script>
+									var totalYear = new Date().getFullYear() - 2015;
+									document.write(totalYear);
+								</script>
+							</span>
+							<span class="smll">Years Experience Working, until now</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 	<!--================ End WorkExperience Area =================-->
 
 	<!--================ Start skillStack Area =================-->
@@ -223,8 +295,6 @@
 							● api 서버로 유저 응답 처리</p>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center ">
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<img src="img/skills/java.png" alt="">
@@ -235,13 +305,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/cc.jpg" alt="">
-						<h4>C, C++</h4>
-						<p> 프로그래머의기본! </p>
-					</div>
-				</div>
+			</div>
+			<div class="row justify-content-center ">
+				
 			</div>
 			<div class="row justify-content-center ">
 				<div class="col-lg-3 col-md-6">
@@ -266,6 +332,23 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="row justify-content-center ">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/skills/aws.jpg" alt="">
+						<h4>AWS</h4>
+						<p>EC2, RDB, 클라우드프론트, S3 등등 사용중</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/skills/etc2.jpg" alt="">
+						<h4>ETC</h4>
+						<p>JIRA, confluence, Github, SVN 등등 다양한 협업툴을 사용하였습니다.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--================ End skillStack Area =================-->
@@ -283,8 +366,8 @@
 			<div class="filters portfolio-filter">
 				<ul>
 					<li class="active" data-filter="*">all</li>
-					<li data-filter=".company"> company </li>
-					<li data-filter=".personal"> personal</li>
+					<li data-filter=".company"> 회사 </li>
+					<li data-filter=".personal"> 개인 </li>
 				</ul>
 			</div>
 
@@ -305,7 +388,7 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html"> Yafit.Cycle</a></h4> <br>
+								<h4><a href="portfolio-details.html"> 야핏싸이클</a></h4> <br>
 								<p>
 									신개념 메타버스 홈트레이닝! <br>
 									<br>
@@ -447,7 +530,8 @@
 									네이버 웹툰 '갓오브하이스쿨' 아이피로 제작한 액션 게임 <br><br>
 
 									● 장르 : 수집형 RPG <br>
-									● 서비스 국가 : 한국 <br><br>
+									● 서비스 국가 : 한국 <br>
+									● 현재는 2021 갓오브하이스쿨 <br><br>
 
 									<span style="color:#0d6e02"> 서비스 진행중</span><br>
 								</p>
@@ -474,9 +558,9 @@
 							<div class="short_info">
 								<h4><a href="portfolio-details.html">다했냥</a></h4><br>
 								<p>
-									데일리 Todo app <br><br>
+									Todo 앱과 다마고치를 합친 앱 <br><br>
 
-									<span style="color:#0011ff"> 개발 진행중</span><br>
+									<span style="color:#0011ff"> 작업중</span><br>
 								</p>
 							</div>
 						</div>
