@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> HotJJory - Portflio </title>
+    <title> welcome - garam's site </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -31,6 +31,18 @@
 
     <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -72,39 +84,11 @@
                             <div class="row">
 
                                 <!-- 야핏 -->
-								
-								
-								
-								
-
                                 <div class="col-md-12 ">
                                     <div class="blog-entry ftco-animate d-md-flex">
-									
-									<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-								  <div class="carousel-inner">
-									<div class="carousel-item active">
-									  <img class="img img-2 mt-auto d-block w-100" src="./images/project/eventracing.jpg" alt="First slide">
-									</div>
-									<div class="carousel-item">
-									  <img class="img img-2 mt-auto d-block w-100" src="./images/project/training.jpg" alt="Second slide">
-									</div>
-									<div class="carousel-item">
-									  <img class="img img-2 mt-auto d-block w-100" src="./images/project/racing.jpg" alt="Third slide">
-									</div>
-								  </div>
-								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								  </a>
-								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								  </a>
-								</div>
-								
-                                        <!-- <a href="single.html" class="img img-2 mt-auto" style="background-image: url(images/project/work1.jpg);"></a> -->
+                                        <a href="" class="img img-2" style="background-image: url(images/project/lobby.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">Yafit.Cycle</a></h3>
+                                            <h3 class="mb-2">야핏 싸이클</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="meta">
                                                     <span>2020/04 ~ Currnet</span>
@@ -118,19 +102,81 @@
                                                 <hr />
                                                 - WCF와 SignalR을 사용하여 서버를 제작<br>
                                                 - Asp.net MVC를 사용하여 관리자용 사이트 개발<br>
-                                                - C#, Redis, Mysql, Elk 사용 <br>
+                                                - C#, Redis, Mysql, ELK 스택 사용 <br>
                                             </p>
-                                            <p><a href="single.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+
+                                            <p>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#yafitModal">
+                                                    Read More &#128214;
+                                                </button>
+                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- 야핏 설명 -->
+                                <div class="modal" id="yafitModal">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                  
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title"> &#127949; 야핏 싸이클</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                  
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>
+                                            <h6>● 야핏 사이클 서버 개발 및 유지 보수 </h6><br>
+                                            -	WCF를 이용한 Restful API를 구축하여 메인 서버로 활용 <br>
+                                            -	signal R이용하여 실시간 통신이 가능한 트랙 서버 및 채팅 서버 개발 <br>
+                                            <br>
+                                            ◦	유저들은 트랙서버를 이용하여 실시간으로 다른 유저들과 한 트랙(방)안에서 라이딩 <br>
+                                            -	야핏 컨텐츠 80% 개발[작업 컨텐츠] <br>
+                                            ◦	API : 핫타임, 미션-업적, 클럽(파티), 운동 로그, 멤버십, 상점, 친구, 운동 추천  <br>
+                                            ◦	실시간통신 : 스피드/RPM레이싱, 이벤트레이싱, 프리라이딩 등 <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● 야핏 야나두간 통신 가능한 API개발</h6><br>
+                                                -	.net core를 사용하여 API 개발 후 IIS사용 하여 호스팅<br>
+                                                ◦	이용권 등록 API 개발 및 이용권 등록 사이트 유지보수<br>
+                                                ◦	야나두 ↔ 야핏 필요한 정보 교환 및 통신 API 개발    <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● 사용자 로그 수집 및 관리</h6><br>
+                                                -	ELK stack을 이용하여 구축, 사용자 로그 수집 및 관리<br>
+                                                ◦	수집한 로그를 활용하여 인 앱에서 운동량 표시 및 유저들 CS 처리에 활용<br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>●야핏 사이클 관리자 전용 웹 사이트 개발 및 유지보수</h6><br>
+                                                -	백엔드 : ASP.NET을 이용, MVC 패턴으로 개발<br>
+                                                -	프론트엔드 : bootstrap, html, jQuery<br>
+                                                -	관리자 사이트 구축 후 IIS를 사용하여 배포<br>
+                                                ◦	유저 관리, 로그 조회, 기획 데이터 업데이트 등<br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>●Redis / MySQL을 사용</h6><br>
+                                                -	Redis를 사용하여 Ranking 시스템 구현 및 캐시 서버로 사용<br>
+                                                -	Redis의 pub/sub 기능을 활용해 서버간 통신<br>
+                                                -	유저의 주요 정보는 MySQL 사용하여 저장<br>
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
                                 <!-- 아일랜드 -->
                                 <div class="col-md-12">
                                     <div class="blog-entry ftco-animate d-md-flex">
-                                        <a href="single.html" class="img img-2" style="background-image: url(images/project/work2.jpg);"></a>
+                                        <a href="" class="img img-2" style="background-image: url(images/project/work2.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">아일랜드 M Island M </a></h3>
+                                            <h3 class="mb-2">아일랜드M</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="meta">
                                                     <span>2019/03 ~ 2020/04</span>
@@ -139,99 +185,212 @@
                                             <p class="mb-4">
                                                 - 동명 웹툰을 원작으로 하는 턴제 모바일 게임<br>
                                                 - 스토리모드, 전투(레이드,마천루)등 컨텐츠<br>
-                                                <br>
                                                 <hr />
                                                 - WCF와 SignalR을 사용하여 서버를 제작<br>
                                                 - Asp.net MVC를 사용하여 관리자용 사이트 개발<br>
                                                 - C#, Redis, Mysql, Elk 사용 <br>
                                             </p>
-                                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+
+                                            <p>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#islandMModal">
+                                                    Read More &#128214;
+                                                </button>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="modal" id="islandMModal">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                  
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title"> &#128127; 아일랜드M</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                  
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>
+                                            <h6>● 아일랜드M서버 개발 </h6><br>
+                                            -	WCF를 이용한 Restful API를 구축하여 메인 서버로 활용 <br>
+                                            -	signal R이용하여 실시간 통신이 가능한 트랙 서버 및 채팅 서버 개발 <br>
+                                            <br>
+                                                [작업 컨텐츠] <br>
+                                                ◦	실시간 통신 : 봉마전(보스레이드), 채팅서버 <br>
+                                                ◦	API : 미션-퀘스트, 스테이지 별 보상 <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● 사용자 로그 수집 및 관리</h6><br>
+                                                -	ELK stack을 구축하여 사용자 로그 수집 및 관리<br>
+                                                ◦	이용권 등록 API 개발 및 이용권 등록 사이트 유지보수<br>
+                                                ◦	야나두 ↔ 야핏 필요한 정보 교환 및 통신 API 개발    <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● 아일랜드M 관리자 전용 웹사이트 개발 및 유지보수</h6><br>
+                                                -	ASP.NET과 bootstrap, html, jQuery등을 사용하여 관리자 사이트 구축 후 IIS를 사용하여 배포 <br>
+                                                -	유저 관리, 기획 데이터 관리, 로그 관리, 서버 관리용 사이트 개발 및 유지 보수 <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>●Redis / MySQL을 사용</h6><br>
+                                                -	Redis를 사용하여 Ranking 시스템 구현 및 캐시 서버로 사용<br>
+                                                -	유저의 주요 정보는 MySQL 사용하여 저장<br>
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
                                 <!--  cook2-->
                                 <div class="col-md-12">
                                     <div class="blog-entry ftco-animate d-md-flex">
-                                        <a href="single.html" class="img img-2" style="background-image: url(images/project/work3.jpg);"></a>
+                                        <a href="" class="img img-2" style="background-image: url(images/project/work3.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">Cook2</a></h3>
+                                            <h3 class="mb-2">쿠크2 마법의 레시피</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="meta">
                                                     <span>2017/11 ~ 2018/3</span>
                                                 </p>
                                             </div>
-                                            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                            <p class="mb-4">
+                                                - 장르 : SNG <br>
+                                                - 레시피를 모아 나만의 레스토랑을 운영하는 게임 <br>
+                                                - 일본 서비스<br>
+                                                <hr />
+                                                - WPF로 작성된 운영툴 관리 및 유지 보수 <br>
+                                                - Elastic search로 저장된 로그 관리 툴 별도 개발<br>
+                                                - C#, Redis, Mysql, ELK, couchbase 사용 <br>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-
                                 <!--  mph -->
                                 <div class="col-md-12">
                                     <div class="blog-entry ftco-animate d-md-flex">
-                                        <a href="single.html" class="img img-2" style="background-image: url(images/project/mph.jpg);"></a>
+                                        <a href="" class="img img-2" style="background-image: url(images/project/mph.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">Heroes : pocket arena</a></h3>
+                                            <h3 class="mb-2">포켓 히어로즈 아레나</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="mb-4">
                                                     - 3 vs 3 MOBA 게임<br>
-                                                    - 랭킹, 캐릭터 뽑기, 캐릭터 성장
-                                                    - <br>
+                                                    - 랭킹, 캐릭터 뽑기, 캐릭터 성장 <br>
                                                     <hr />
-                                                    - node.js, socketIO를 사용하여 실시간 서버 개발
-                                                    - node.js를 사용하여 관리용 사이트 개발
-                                                    - Mysql<br>
+                                                    - node.js, socketIO를 사용하여 실시간 서버 개발 <br>
+                                                    - node.js를 사용하여 관리용 사이트 개발 <br>
+                                                    - Mysql을 주력 DB로 사용<br>
                                                 </p>
                                             </div>
-                                            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="col-md-12">
+                                    <div class="blog-entry ftco-animate d-md-flex">
+                                        <a href="" class="img img-2" style="background-image: url(images/project/GOS.jpg);"></a>
+                                        <div class="text text-2 p-4">
+                                            <h3 class="mb-2"><a href="">GOS : Grilled Onion Studio</a></h3>
+                                            <div class="meta-wrap">
+                                                <p class="mb-4">
+                                                    - 주소 : <a href="https://www.facebook.com/GrilledOnionGames/?locale=en_GB">gos 페북</a>
+                                                    - 네오위즈 산하의 구운양파 스튜디오 미니게임 통합 API 개발
+                                                    <hr />
+                                                    - node.js, socketIO를 사용하여 실시간 서버 개발 <br>
+                                                    - node.js를 사용하여 관리용 사이트 개발 <br>
+                                                    - Mysql을 주력 DB로 사용<br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!--  goh -->
                                 <div class="col-md-12">
                                     <div class="blog-entry ftco-animate d-md-flex">
                                         <a href="single.html" class="img img-2" style="background-image: url(images/project/work4.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">갓오하 2017</a></h3>
+                                            <h3 class="mb-2">갓오하 2017</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="meta">
                                                     <span>2017/1 ~ 2017/11</span>
                                                 </p>
                                             </div>
                                             <p class="mb-4">
-                                                - 3 vs 3 MOBA 게임<br>
-                                                - 랭킹, 캐릭터 뽑기, 캐릭터 성장
-                                                - <br>
+                                                - 수집형 액션 RPG <br>
+                                                - 네이버 웹툰 "갓오브하이스쿨" IP로 개발 
+                                                <br>
                                                 <hr />
-                                                - node.js, socketIO를 사용하여 실시간 서버 개발
-                                                - node.js를 사용하여 관리용 사이트 개발
-                                                - Mysql<br>
+                                                - 라이브 서비스팀 <br>
                                             </p>
-                                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gohModal">
+                                                    Read More &#128214;
+                                                </button>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+                                
+
+                                <div class="modal" id="gohModal">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                  
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title"> &#128127; 갓오하2017</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                  
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>
+                                            <h6>● 서버 개발 </h6><br>
+                                            -	C#을 WCF Restful API 이용하여, `2017 갓오브하이스쿨` 신규 컨텐츠 개발 및 라이브 유지 보수 및 신규 <br>
+                                            -	신규 개발 : 갓챠 시스템 개발, 아이템 강화, 캐릭터 승급 <br>
+                                            -	라이브 유지 보수 및 각종 버그 수정 <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● 운영툴</h6><br>
+                                               백엔드 : ASP.NET을 이용 MVC 패턴으로 개발 IIS에 배포<br>
+                                                프론트엔드 : bootstrap + KendoUI framework<br>
+                                                플레이어 관리 및 운영자의 게임 관리용 사이트 유지 보수 <br>
+                                            </p>
+                                            <hr/>
+                                            <p>
+                                                <h6>● DB </h6><br>
+                                                MySQL 사용하여 유저 정보 저장 및 관리  <br>
+                                                Redis 사용하여 랭킹 정보 저장 <br>
+                                                MongoDB사용하여 유저 로그 관리하던 중 NHN요청으로 MySQL로 마이그레이션 진행 <br>
+                                            </p>
+                                            <hr/>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
                                 <div class="col-md-12">
                                     <div class="blog-entry ftco-animate d-md-flex">
-                                        <a href="single.html" class="img img-2" style="background-image: url(images/project/work5.jpg);"></a>
+                                        <a href="" class="img img-2" style="background-image: url(images/project/work5.jpg);"></a>
                                         <div class="text text-2 p-4">
-                                            <h3 class="mb-2"><a href="single.html">강철의기사</a></h3>
+                                            <h3 class="mb-2">강철의기사</a></h3>
                                             <div class="meta-wrap">
                                                 <p class="meta">
                                                     <span>2015/2 ~ 2016/08</span>
                                                 </p>
                                             </div>
                                             <p class="mb-4">
-                                                - 모바일 액션 RPG <br>
-                                                - 관리툴 Spring framework 사용하여 제작 
+                                                - 장르 : 모바일 액션 RPG <br>
+                                                - 운영툴 : java 기반의 Spring framework를 사용하여 MVC 패턴으로 제작 <br>
+                                                - 서버 정기 점검 및 운영툴 유지보수<br>
+                                                - 신규 컨텐츠에 맞는 로그 생성 <br>
                                                 <hr />
-                                                - Java, Spring, Mybatis, MSsql<br>
+                                                - Java, Spring, Mybatis, MSSQL<br>
                                             </p>
-                                            <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -284,12 +443,13 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
+  <!-- <script src="js/jquery.timepicker.min.js"></script> -->
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
+  
 <script type="text/javascript">
 $('.owl-carousel').owlCarousel({
     rtl:true,
