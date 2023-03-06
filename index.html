@@ -50,7 +50,8 @@
 							<li class="nav-item"><a class="nav-link" href="#skillStack">Skill Stack</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
 							<li class="nav-item"><a class="nav-link" href="https://podo1017.tistory.com/">Tistory</a>
-							<li class="nav-item"><a class="nav-link" href="https://github.com/garambaek1017/BGRServer">Github</a>
+							<li class="nav-item"><a class="nav-link"
+									href="https://github.com/garambaek1017/BGRServer">Github</a>
 							</li>
 							<!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
 						</ul>
@@ -90,6 +91,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<!--================ End About Us Area =================-->
 
@@ -196,12 +198,12 @@
 								<div class="d-table-cell text-center">
 									<img src="img/brands/logo2.png" alt="">
 									<br>
-									2015/02 - 2016/08			
+									2015/02 - 2016/08
 								</div>
-							
+
 							</div>
 						</div>
-						
+
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
@@ -272,6 +274,56 @@
 					</div>
 				</div>
 			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-ld-12">
+					<canvas id="bar-chart" width="400" height="400"></canvas>
+				</div>
+				<script>
+					const data = {
+						labels: [
+							'C#(api,socket)',
+							'Mysql',
+							'Redis',
+							'ElasticSearch',
+							'ETC'
+						],
+						datasets: [{
+							label: '주요 스킬',
+							data: [90, 80, 80, 75, 100, 100, 0],
+							backgroundColor: [
+								'rgba(255, 99, 132)',
+								'rgba(255, 159, 64 )',
+								'rgba(255, 205, 86 )',
+								'rgba(75, 192, 192 )',
+								'rgba(54, 162, 235)',
+							],
+							borderColor: [
+								'rgb(255, 99, 132)',
+								'rgb(255, 159, 64)',
+								'rgb(255, 205, 86)',
+								'rgb(75, 192, 192)',
+								'rgb(54, 162, 235)',
+							],
+							borderWidth: 2
+						}]
+					};
+
+					const config = {
+						type: 'bar',
+						data: data,
+						options: {
+							scales: {
+								y: {
+									beginAtZero: true
+								}
+							}
+						},
+					};
+
+					var ctx = document.getElementById('bar-chart');
+					var radderChart = new Chart(ctx, config);
+				</script>
+			</div>
 			<div class="row justify-content-center ">
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
@@ -297,7 +349,7 @@
 							<br>
 							<b>[사용 프로젝트]</b><br>
 							- 포켓히어로즈 아레나, 어니언스튜디오 미니게임들<br>
-						
+
 						</p>
 					</div>
 				</div>
@@ -315,7 +367,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center ">
-				
+
 			</div>
 			<div class="row justify-content-center ">
 				<div class="col-lg-3 col-md-6">
