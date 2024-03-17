@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'YEONGJUSeonbiTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.information {
+    font-family:YEONGJUSeonbiTTF;
+    font-size: 20px;
+}
+
+
+.information_title {
+    font-family:YEONGJUSeonbiTTF;
+    font-size: 40px;
+}
+
+.main_title {
+    font-family:YEONGJUSeonbiTTF;
+    font-size: 40px;
+}
+
+.experience_year {
+    font-family:YEONGJUSeonbiTTF;
+    font-size: 15px;
+}

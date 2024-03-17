@@ -2578,6 +2578,15 @@ h6 {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
     margin-left: 20px; }
+	
+  .client-info .lage2 {
+    color: #e97312;
+    font-family: "Rubik", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 85px;
+    position: relative;
+    z-index: 9; }
 
 .call-now {
   padding-top: 50px;
