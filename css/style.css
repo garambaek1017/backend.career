@@ -7316,6 +7316,7 @@ h1, h2, h3, h4, h5,
   overflow: hidden;
   position: relative; }
 
+/* rgba(0, 0, 0, 0.04); */
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -7329,7 +7330,8 @@ h1, h2, h3, h4, h5,
   right: 0;
   overflow-y: hidden;
   z-index: 1001;
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(40, 167, 69, 0.8) 
+  
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -8000,8 +8002,9 @@ h1, h2, h3, h4, h5,
         border-color: #fff;
         color: #ccb78f; }
 
+/* background: #ffbe98 !important; */
 .ftco-bread {
-  background: #ffbe98 !important;
+  background: #34ce57 !important;
   padding: 4em 1.8em !important; }
   .ftco-bread .breadcrumbs {
     text-transform: uppercase;
