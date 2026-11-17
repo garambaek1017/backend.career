@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="백엔드 개발자 백가람의 프로젝트와 경력. 게임 서버, 실시간 콘텐츠, 데이터 처리와 라이브 운영.">
   <title>백엔드 개발자 백가람 · 포트폴리오</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=editor-icons">
   <script src="project-renderer.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=paw-editor" defer></script>
 </head>
 <body id="top">
   <header class="site-header">
     <div class="wrap header-inner">
       <div class="brand-group">
-        <button id="edit-projects" type="button" aria-label="프로젝트 편집" aria-haspopup="dialog" title="프로젝트 편집">
+        <button id="paw-sound" type="button" aria-label="고양이 울음소리 재생. 2초 안에 세 번 누르면 프로젝트 편집" aria-haspopup="dialog" title="냐옹!">
           <img src="assets/clay-cat-paw.png" width="32" height="32" alt="">
         </button>
         <a class="brand" href="#top">백가람</a>
@@ -660,7 +660,6 @@
       </div>
     </div>
   </dialog>
-
   <script id="project-data" type="application/json">
 [
   {
@@ -1125,5 +1124,7 @@
   }
 ]
 </script>
+  <!-- Cute Kitten Meow by Breviceps, CC0 1.0. https://freesound.org/people/Breviceps/sounds/448084/ -->
+  <audio id="cat-meow" src="assets/kitten-meow.mp3" preload="auto"></audio>
 </body>
 </html>

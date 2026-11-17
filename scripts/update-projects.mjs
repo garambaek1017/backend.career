@@ -48,7 +48,7 @@ try {
     .replace(careerTimeline, (_, start, end) => `${start}\n${timeline}\n        ${end}`)
     .replace(contactBlock, (_, start, end) => `${start}\n${contactLinks}\n      ${end}`);
   const embedded = JSON.stringify(projects, null, 2).replaceAll('<', '\\u003c');
-  writeFileSync(pageFile, updated.replace(dataBlock, (_, start, end) => start + '\n' + embedded + '\n' + end), 'utf8');
+  writeFileSync(pageFile, updated.replace(dataBlock, (_, start, end) => `${start}\n${embedded}\n${end}`), 'utf8');
   console.log(`프로젝트 ${projects.length}개, 경력 ${duration}, 연락처 링크를 index.html에 반영했습니다.`);
 } catch (error) {
   console.error(`포트폴리오 반영 실패: ${error.message}`);

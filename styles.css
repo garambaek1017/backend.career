@@ -111,7 +111,7 @@ dialog::backdrop { background: #3C2A23DC; }
 .dialog-header button { min-height: 44px; background: var(--tag); color: var(--accent-ink); border: 0; border-radius: 9px; padding-inline: 12px; font-weight: 750; white-space: nowrap; }
 #image-dialog .dialog-header { justify-content: flex-end; }
 #image-dialog .dialog-header button { width: 44px; padding: 0; font-size: 1.3rem; line-height: 1; }
-.dialog-inner img { display: block; margin: auto; width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 126px); object-fit: contain; }
+#image-dialog .dialog-inner > img { display: block; margin: auto; width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 126px); object-fit: contain; }
 html:has(dialog[open]) { overflow: hidden; }
 @media (max-width: 740px) {
   .company-projects, .background-grid, .skills-grid { grid-template-columns: minmax(0, 1fr); }
@@ -128,9 +128,9 @@ html:has(dialog[open]) { overflow: hidden; }
 }
 
 .brand-group { display: flex; align-items: center; gap: 9px; }
-#edit-projects { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--glass-edge); border-radius: 12px; padding: 0; background: var(--glass-tint); }
-#edit-projects img { display: block; width: 32px; height: 32px; object-fit: contain; }
-#edit-projects:hover { background: var(--tag); border-color: var(--line); }
+#paw-sound { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--glass-edge); border-radius: 12px; padding: 0; background: var(--glass-tint); }
+#paw-sound img { display: block; width: 32px; height: 32px; object-fit: contain; }
+#paw-sound:hover { background: var(--tag); border-color: var(--line); }
 
 /* Glass surfaces over the warm ivory page */
 .site-header, .cover, .timeline, .footer, dialog {
@@ -158,7 +158,6 @@ html:has(dialog[open]) { overflow: hidden; }
 .footer { margin-bottom: 24px; padding-inline: 18px; border-radius: 16px; }
 dialog { border-radius: 22px; background: var(--glass-bright); box-shadow: 0 24px 72px #38201752; }
 dialog::backdrop { background: #3C2A238C; backdrop-filter: blur(6px); }
-
 
 /* Editor glass shell and solid controls */
 #project-editor {
@@ -230,6 +229,7 @@ dialog::backdrop { background: #3C2A238C; backdrop-filter: blur(6px); }
 #add-project { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; background: var(--glass-tint); }
 #add-project:hover { background: var(--tag); }
 #add-responsibility { display: inline-flex; align-items: center; gap: 7px; }
+#add-responsibility img { flex: none; width: 20px; height: 20px; }
 #open-projects { margin-inline-end: auto; }
 @media (max-width: 560px) { .project-fields-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 410px) {
@@ -237,4 +237,3 @@ dialog::backdrop { background: #3C2A238C; backdrop-filter: blur(6px); }
   .editor-actions button { padding: 4px; font-size: .78rem; }
   #open-projects { margin-inline-end: 0; }
 }
-

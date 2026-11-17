@@ -22,15 +22,6 @@ function updateMenu() {
 window.addEventListener('hashchange', updateMenu);
 updateMenu();
 
-const editButton = document.querySelector('#edit-projects');
-const projectEditor = document.querySelector('#project-editor');
-const editorStatus = document.querySelector('#editor-status');
-const projectSelect = document.querySelector('#project-select');
-const projectFields = document.querySelector('#project-fields');
-const fields = [...projectFields.querySelectorAll('[data-project-field]')];
-const stack = document.querySelector('#project-stack');
-const duties = document.querySelector('#responsibility-list');
-const dutyTemplate = document.querySelector('#responsibility-template');
 const cards = document.querySelector('.projects');
 const toggleAllProjects = document.querySelector('#toggle-all-projects');
 const toggleAllText = toggleAllProjects.querySelector('span');
@@ -50,6 +41,37 @@ toggleAllProjects.addEventListener('click', () => {
 });
 cards.addEventListener('toggle', syncProjectToggle, true);
 syncProjectToggle();
+
+const pawButton = document.querySelector('#paw-sound');
+const catMeow = document.querySelector('#cat-meow');
+catMeow.volume = 0.28;
+const pawClickWindow = 2000;
+let pawClicks = [];
+
+pawButton.addEventListener('click', () => {
+  const now = performance.now();
+  pawClicks = pawClicks.filter(time => now - time <= pawClickWindow);
+  pawClicks.push(now);
+  if (pawClicks.length === 1) {
+    catMeow.currentTime = 0;
+    catMeow.play().catch(() => {});
+  }
+  if (pawClicks.length === 3) {
+    pawClicks = [];
+    editorStatus.textContent = '';
+    projectEditor.showModal();
+  }
+});
+
+const projectEditor = document.querySelector('#project-editor');
+const editorStatus = document.querySelector('#editor-status');
+const projectSelect = document.querySelector('#project-select');
+const projectFields = document.querySelector('#project-fields');
+const fields = [...projectFields.querySelectorAll('[data-project-field]')];
+const stack = document.querySelector('#project-stack');
+const duties = document.querySelector('#responsibility-list');
+const dutyTemplate = document.querySelector('#responsibility-template');
+
 let projects = JSON.parse(document.querySelector('#project-data').textContent);
 let selectedIndex = projects.length ? 0 : -1;
 
@@ -104,13 +126,9 @@ function refreshProjectOptions(index) {
 }
 
 refreshProjectOptions(selectedIndex);
-editButton.addEventListener('click', () => {
-  editorStatus.textContent = '';
-  projectEditor.showModal();
-});
 projectEditor.addEventListener('close', () => {
   storeProjectFields();
-  editButton.focus({ preventScroll: true });
+  pawButton.focus({ preventScroll: true });
 });
 
 projectSelect.addEventListener('change', () => {
@@ -197,4 +215,3 @@ document.querySelector('#save-projects').addEventListener('click', async () => {
     editorStatus.textContent = `저장할 수 없습니다: ${error.message}`;
   }
 });
-
