@@ -1,544 +1,1129 @@
-﻿<!doctype html>
-<html lang="en">
-
+<!doctype html>
+<html lang="ko">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Baek Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- <link rel="stylesheet" href="css/heartbutton.css"> -->
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="백엔드 개발자 백가람의 프로젝트와 경력. 게임 서버, 실시간 콘텐츠, 데이터 처리와 라이브 운영.">
+  <title>백엔드 개발자 백가람 · 포트폴리오</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="project-renderer.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
+<body id="top">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand-group">
+        <button id="edit-projects" type="button" aria-label="프로젝트 편집" aria-haspopup="dialog" title="프로젝트 편집">
+          <img src="assets/clay-cat-paw.png" width="32" height="32" alt="">
+        </button>
+        <a class="brand" href="#top">백가람</a>
+      </div>
+      <nav aria-label="페이지 메뉴">
+        <a href="#tech-stack">스킬</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#career">경력</a>
+        <a href="#education">학력·자격</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <figure class="cover">
+          <button class="zoom-trigger" type="button" aria-label="백엔드 개발 역량 인포그래픽 확대" aria-haspopup="dialog" title="인포그래픽 확대">
+            <img src="assets/portfolio-hero.png" width="1672" height="941" fetchpriority="high" alt="회색 후드티를 입은 여성 개발자가 중앙에 있는 클레이 인포그래픽. 백엔드 설계, 데이터 처리와 모니터링, 설계 검증, 협업, 개발 파트장 경험, AI 활용과 학습을 소개합니다.">
+          </button>
+        </figure>
+        <div class="hero-content">
+          <h1 id="hero-title">
+            <span class="hero-role" lang="en">Backend Developer &amp; Engineer | 백가람 </span>
+            <!-- 
+              <span class="hero-name">백가람</span>
+            -->
+          </h1>
+          <!-- 
+            <p class="hero-intro">백엔드 개발과 시스템 설계 경력 <strong id="career-duration">11년 6개월</strong></p>
+          -->
+          <p class="hero-intro">Node.js와 C#/.NET으로 게임 서버와 API를 설계하고, 배포부터 라이브 운영까지 맡아왔습니다.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap section" id="tech-stack" aria-labelledby="tech-stack-title">
+      <h2 id="tech-stack-title">사용 가능 스킬</h2>
+      <div class="skills-grid">
+        <section class="skill-group">
+          <h3>개발 언어</h3>
+          <ul class="skill-tags">
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+          </ul>
+        </section>
+        <section class="skill-group">
+          <h3>DB / NoSQL</h3>
+          <ul class="skill-tags">
+            <li>MySQL</li>
+            <li>SQL Server (MSSQL)</li>
+            <li>Redis</li>
+            <li>MongoDB</li>
+            <li>Couchbase</li>
+          </ul>
+        </section>
+        <section class="skill-group">
+          <h3>Tool</h3>
+          <ul class="skill-tags">
+            <li>Git</li>
+            <li>GitLab</li>
+            <li>SVN</li>
+            <li>Jenkins</li>
+            <li>Ansible</li>
+            <li>Grafana</li>
+            <li>Elastic Stack (ELK)</li>
+            <li>Confluence</li>
+            <li>Eclipse</li>
+            <li>Unity</li>
+            <li>Claude</li>
+          </ul>
+        </section>
+        <section class="skill-group">
+          <h3>Etc.</h3>
+          <ul class="skill-tags">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>ASP.NET</li>
+            <li>.NET (Web API, Core, Framework)</li>
+            <li>SignalR</li>
+            <li>gRPC</li>
+            <li>MagicOnion</li>
+            <li>Socket.IO</li>
+            <li>SuperSocket</li>
+            <li>WCF</li>
+            <li>Blazor</li>
+            <li>MudBlazor</li>
+            <li>WPF</li>
+            <li>Spring</li>
+            <li>Struts</li>
+            <li>iBatis</li>
+            <li>Hibernate</li>
+            <li>ServiceStack ORM</li>
+            <li>GWT 2.6</li>
+            <li>Bootstrap</li>
+            <li>Kendo UI</li>
+            <li>AWS EC2 (Linux / Windows)</li>
+            <li>IIS</li>
+          </ul>
+        </section>
+      </div>
+    </section>
 
+    <section class="wrap section projects-section" id="projects" aria-labelledby="projects-title">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span> 01 / PROJECTS</p>
+      <h2 id="projects-title">프로젝트</h2>
+      <div class="project-toolbar">
+        <p class="section-intro">서버 설계부터 실시간 콘텐츠 개발과 라이브 운영까지. 카드를 열어 담당 업무와 사용 기술을 확인할 수 있습니다.</p>
+        <button id="toggle-all-projects" type="button" aria-controls="project-list" hidden>
+          <img class="clay-icon" src="assets/clay-arrow.png" width="20" height="20" alt="">
+          <span>모두 펼치기</span>
+        </button>
+      </div>
+      <div class="projects" id="project-list">
+        <!-- projects:start -->
+        <section class="project-company" aria-labelledby="project-company-1">
+          <h3 id="project-company-1" class="project-company-title">에이시티게임즈</h3>
+          <div class="company-projects">
+            <details class="project" id="project-1">
+            <summary>
+              <span class="project-label">
+                <span class="meta">에이시티게임즈 · 2026.02 – 2026.10</span>
+                <span class="project-title">헬로키티 솔리테어</span>
+                <span class="project-caption">메인 서버 단독 설계와 오프라인 동기화</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>헬로키티 IP 기반 모바일 게임 「헬로키티 솔리테어」의 메인 서버 아키텍처 설계부터 백오피스, AWS 클라우드 및 CI/CD 구축까지 백엔드 전 영역을 단독으로 완수했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-1">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-1">오프라인 플레이 후 재접속 시 게임 데이터 동기화</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>오프라인 플레이를 지원하면서 재접속한 계정의 게임 데이터를 서버와 동기화해야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>.NET Web API 기반 REST API 서버를 단독 개발하고, AccountId를 기준으로 세션을 관리하도록 설계했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>오프라인 플레이 후 재접속해 서버 데이터와 동기화할 수 있는 구조를 구현했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>Redis 분산 잠금 기반 동시성 제어 및 데이터 정합성 확보</strong><br>MySQL 게임 데이터 모델링과 Redis 세션·캐시 구조를 설계하고, Redis 분산 잠금(Distributed Lock) 및 서버 검증 로직을 적용해 중복 요청·어뷰징 원천 차단</li>
+              <li><strong>라이브 백오피스 및 AWS·Jenkins 자동 배포 환경 구축</strong><br>라이브 운영용 신규 백오피스 개발, AWS EC2(Linux) 운영 환경 구성 및 Jenkins 기반 CI/CD 배포 파이프라인 구축</li>
+              <li><strong>생성형 AI(Claude) 기반 개발 생산성 및 코드 품질 고도화</strong><br>AI를 활용한 서버 기능 구현·리팩터링·기술 문서화와 엔지니어 기술 검증 프로세스를 결합해 단독 개발 속도 및 코드 안정성 극대화</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>.NET(Web API)</span><span>MySQL</span><span>Redis</span><span>AWS EC2(Linux)</span><span>Jenkins</span><span>Claude</span><span>Git</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-2">
+            <summary>
+              <span class="project-label">
+                <span class="meta">에이시티게임즈 · 2025.01 – 2026.03</span>
+                <span class="project-title">Transformers : Multi Shock</span>
+                <span class="project-caption">gRPC 도입과 아웃게임 서버 개발</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>타카라토미 IP 기반 로그라이크 액션 모바일 게임 「Transformers」의 아웃게임 API 서버와 Blazor 기반 웹 백오피스를 개발하고, 차세대 통신 프레임워크(MagicOnion) 도입 및 배포 자동화를 구축했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-2">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-2">Unity 테스트 클라이언트로 gRPC 통신 검증</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>실시간 통신에 사용할 gRPC 기반 MagicOnion을 도입하기 전에 게임 클라이언트에서 통신 구조를 검증해야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>Unity 테스트 클라이언트를 직접 개발해 통신 구조를 검증했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>MagicOnion을 도입하고, 통신 구조를 Confluence에 문서화하고 Git으로 팀에 공유했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>아웃게임 API 및 Blazor 기반 웹 백오피스 개발</strong><br>MySQL·Redis 기반 사용자 데이터 및 아웃게임 콘텐츠 API를 구현하고, Blazor와 MudBlazor를 활용한 라이브 서비스 관리용 웹 백오피스 구축</li>
+              <li><strong>Jenkins·Ansible 기반 배포 자동화 파이프라인 구축</strong><br>반복적인 서버 빌드 및 배포 공수를 제거하기 위해 Jenkins와 Ansible을 연계한 배포 자동화 환경 구현</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>.NET Core</span><span>gRPC</span><span>MagicOnion</span><span>Blazor</span><span>MudBlazor</span><span>Unity</span><span>MySQL</span><span>Redis</span><span>AWS EC2(Linux)</span><span>Jenkins</span><span>Ansible</span><span>Confluence</span><span>GitLab</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-3">
+            <summary>
+              <span class="project-label">
+                <span class="meta">에이시티게임즈 · 2023.04 – 2025.02</span>
+                <span class="project-title">ZOIDS Wild Arena</span>
+                <span class="project-caption">정기 점검 3시간 → 30분</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>타카라토미 IP 기반 글로벌 Web3/NFT 트레이딩 카드 게임 「ZOIDS Wild Arena」의 라이브 서비스 서버 개발과 병목 구간 성능 최적화, 모니터링 및 운영 표준화를 수행했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-3">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-3">랭킹 정산 개선으로 정기 점검 단축</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>라이브 서비스의 정기 점검에 3시간이 걸렸습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>대용량 데이터 정산에 쓰이는 DB 쿼리를 튜닝하고, 랭킹 집계 로직을 개선했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>정기 점검 소요 시간이 3시간에서 30분으로 줄었습니다. 약 83% 단축입니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>매칭 알고리즘 개선 및 통신 구조 고도화</strong><br>라이브 서비스 서버 개발 및 서버-클라이언트 통신 구조 개선, 매칭 알고리즘 최적화를 통한 유저 매칭 대기 시간 단축 및 안정성 확보</li>
+              <li><strong>Grafana 인프라 모니터링 구축 및 운영 문서 표준화</strong><br>Grafana 기반 AWS EC2 실시간 모니터링 및 장애 알림 체계를 구축하고, DB 스키마 명세서·패킷 정의서·인프라 운영 가이드를 표준화하여 팀 협업 효율 극대화</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>Node.js</span><span>Socket.IO</span><span>MySQL</span><span>Redis</span><span>AWS EC2(Linux)</span><span>Grafana</span><span>Git</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-2">
+          <h3 id="project-company-2" class="project-company-title">구르는돌</h3>
+          <div class="company-projects">
+            <details class="project" id="project-4">
+            <summary>
+              <span class="project-label">
+                <span class="meta">구르는돌 · 2020.04 – 2023.04</span>
+                <span class="project-title">야핏 사이클</span>
+                <span class="project-caption">실시간 멀티플레이와 콘텐츠 파트 리딩</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>실내 자전거와 메타버스를 결합한 실시간 홈트레이닝 플랫폼 「야핏 사이클」의 콘텐츠 파트장으로서, SignalR 기반 실시간 멀티플레이 서버 개발과 핵심 서비스 콘텐츠 구현 및 팀 리딩을 주도했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-4">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-4">같은 가상 트랙에서 실시간 동시 라이딩</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>여러 사용자가 하나의 가상 트랙에서 동시에 달리고 채팅할 수 있어야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>C#과 SignalR로 실시간 트랙 서버와 채팅 서버를 각각 구현했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>사용자가 같은 가상 트랙에서 함께 라이딩하고 실시간으로 채팅할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>실시간 레이싱 및 리텐션 콘텐츠 개발</strong><br>스피드·RPM·이벤트 레이싱, 프리 라이딩 등 실시간 트랙 콘텐츠와 업적, 미션, 멤버십, 상점, 친구, 클럽, 운동 추천 시스템 등 핵심 아웃게임(WCF RESTful API) 개발</li>
+              <li><strong>콘텐츠 파트 리딩 및 코드 품질 관리</strong><br>파트원 업무 분배, 개발 일정 관리, 코드 리뷰를 수행하고 기획·클라이언트·QA 직군과 협업하여 신규 콘텐츠 라이브 업데이트 관리</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>.NET Framework</span><span>WCF</span><span>SignalR</span><span>MySQL</span><span>Redis</span><span>Git</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-5">
+            <summary>
+              <span class="project-label">
+                <span class="meta">구르는돌 · 2020.04 – 2023.04</span>
+                <span class="project-title">야핏 사이클 · 서비스 연동</span>
+                <span class="project-caption">야나두 연동 API와 라이브 인프라</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>자사 에듀테크 플랫폼(야나두)과의 서비스 통합 연동 API를 .NET Core 기반으로 구축하고, 서비스 운영 백오피스 개발 및 AWS 클라우드 라이브 인프라 운영을 담당했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-5">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-5">야핏과 야나두 간 계정·데이터 연동</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>야핏 사이클과 야나두는 서로 다른 플랫폼으로, 계정과 데이터를 주고받을 연결 지점이 필요했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>.NET Core로 계정과 데이터를 연동하는 API를 설계·개발하고 IIS 환경에 배포했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>두 서비스가 API를 통해 계정과 데이터를 연동할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>운영 백오피스 고도화 및 데이터 처리</strong><br>ASP.NET 기반 관리자 웹 시스템 기능 개발, Redis 기반 실시간 랭킹·캐시 처리 및 MySQL 기반 회원·결제·운동 데이터 무결성 관리</li>
+              <li><strong>AWS 인프라 운영 및 무중단 라이브 대응</strong><br>AWS EC2(Windows) 및 Jenkins 기반 배포·운영 환경 관리, 정기 점검 및 라이브 서비스 장애 신속 대응</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>.NET Core</span><span>.NET Framework</span><span>ASP.NET</span><span>MySQL</span><span>Redis</span><span>AWS EC2(Windows)</span><span>IIS</span><span>Jenkins</span><span>Git</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-6">
+            <summary>
+              <span class="project-label">
+                <span class="meta">구르는돌 · 2020.04 – 2023.04</span>
+                <span class="project-title">야핏 사이클 · 데이터 분석</span>
+                <span class="project-caption">운동 데이터 수집과 CS 분석</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>실시간 라이딩 중 발생하는 대용량 운동 데이터와 사용자 활동 로그를 수집·분석하기 위해 Elastic Stack(ELK) 파이프라인을 구축하여 데이터 기반 운영과 CS 대응 효율을 높였습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-6">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-6">라이딩 로그를 운영과 고객 문의 대응에 활용</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>라이딩 중 쌓이는 운동 데이터와 사용자 활동 로그에서 개인별 기록을 확인하고 이상 데이터를 검증해야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>Elastic Stack(Elasticsearch, Logstash, Kibana)으로 로그를 실시간 수집·색인하고 운동 기록을 조회하는 대시보드를 구축했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>운영팀이 대시보드에서 개인별 기록과 이상 데이터를 확인해 고객 문의에 대응할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>Elastic Stack(ELK)</span><span>C#</span><span>ASP.NET</span><span>MySQL</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-3">
+          <h3 id="project-company-3" class="project-company-title">플렉시마인드</h3>
+          <div class="company-projects">
+            <details class="project" id="project-7">
+            <summary>
+              <span class="project-label">
+                <span class="meta">플렉시마인드 · 2019.03 – 2020.05</span>
+                <span class="project-title">아일랜드</span>
+                <span class="project-caption">실시간 레이드와 로그 분석</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>인기 만화 IP 기반 수집형 턴제 모바일 RPG 「아일랜드」의 백엔드 시스템을 구축하며, 신규 도입 기술인 Elastic Stack(ELK)과 SignalR의 R&amp;D부터 아키텍처 설계, 프로덕션 적용까지 직접 주도하여 라이브 운영 효율과 실시간 콘텐츠 확장성을 확보했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-7">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-7">운영 백오피스에서 사용자 로그 확인</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>라이브 운영 중 사용자 로그를 수집하고, 고객 문의에 필요한 데이터를 운영팀이 확인할 수 있어야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>Elastic Stack을 직접 검토·도입해 로그 수집과 시각화 파이프라인을 구축하고, 운영 백오피스에 연계했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>운영 과정에서 수집한 사용자 로그를 고객 문의 대응과 데이터 분석에 활용할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>SignalR 기술 검증(R&amp;D) 및 실시간 보스 레이드·채팅 서버 구축</strong><br>다수 유저 간 실시간 양방향 통신을 위해 SignalR을 R&amp;D하여 프로덕션에 도입, 실시간 보스 레이드 및 채팅 서버와 WCF 기반 RESTful API 서버 구현</li>
+              <li><strong>운영 백오피스 및 인메모리 데이터 처리</strong><br>ASP.NET 기반 관리자 웹 시스템 개발과 Redis를 활용한 실시간 랭킹·캐싱 처리, MySQL 기반 유저 데이터 무결성 관리</li>
+              <li><strong>AWS 클라우드 인프라 운영 및 서비스 배포</strong><br>AWS EC2(Windows) 및 IIS 기반 서버 인프라 구축·운영을 통한 안정적인 라이브 서비스 배포 환경 유지</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>.NET Framework</span><span>ASP.NET</span><span>WCF</span><span>SignalR</span><span>MySQL</span><span>Redis</span><span>Elastic Stack(ELK)</span><span>AWS EC2(Windows)</span><span>IIS</span><span>Bootstrap</span><span>Git</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-4">
+          <h3 id="project-company-4" class="project-company-title">네오위즈</h3>
+          <div class="company-projects">
+            <details class="project" id="project-8">
+            <summary>
+              <span class="project-label">
+                <span class="meta">네오위즈 · 2018.08 – 2019.03</span>
+                <span class="project-title">히어로즈 : 포켓 아레나</span>
+                <span class="project-caption">Node.js 아웃게임 API와 운영툴</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>3:3 실시간 PvP 대전 모바일 게임 「히어로즈 : 포켓 아레나」의 아웃게임 RESTful API 서버와 웹 운영툴 개발 및 AWS 클라우드 배포까지 전 과정을 구축했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-8">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-8">성장·보상·랭킹을 처리하는 아웃게임 API</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>실시간 대전 외에 사용자 성장, 보상, 랭킹을 처리하는 서버 기능이 필요했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>Node.js와 Express로 기능별 REST API를 설계하고 서버에 해당 비즈니스 로직을 구현했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>클라이언트가 API를 통해 사용자 성장, 보상, 랭킹 기능을 사용할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>종합 웹 운영툴 구축 및 AWS EC2 배포</strong><br>Node.js 기반 운영툴에서 앱·게임 데이터, 유저 정보, 캐릭터, 상자, 우편, 랭킹, 퀘스트 등 라이브 운영 전 기능을 구현하고 AWS EC2(Linux) 환경에 직접 배포·운영</li>
+              <li><strong>게임 데이터 무결성 관리</strong><br>MySQL 기반 유저 및 인게임 성장·보상 데이터 설계 및 안정적인 트랜잭션 처리</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>Node.js</span><span>JavaScript</span><span>Express</span><span>MySQL</span><span>AWS EC2(Linux)</span><span>Git</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-9">
+            <summary>
+              <span class="project-label">
+                <span class="meta">네오위즈 · 2018.07 – 2019.03</span>
+                <span class="project-title">Mobile Grilled Onion 공통 플랫폼</span>
+                <span class="project-caption">멀티 타이틀 공용 API와 운영 시스템</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>스튜디오 내 다수의 미니게임 타이틀이 공통으로 사용하는 백엔드 플랫폼 API와 통합 운영 시스템을 설계·구축하여 신규 게임 개발 공수를 절감하고 운영 효율을 극대화했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-9">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-9">여러 게임에서 재사용하는 백엔드 API</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>스튜디오의 여러 미니게임에 랭킹, 구독, 프로모션, 쿠폰 같은 공통 기능이 필요했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>Node.js와 Express로 랭킹, 구독, 교차 프로모션, 쿠폰 발급·검증을 공용 API 모듈로 만들었습니다.</dd></div>
+                  <div><dt>결과</dt><dd>신규 타이틀에서 같은 기능을 다시 구현하는 공수를 줄였습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>통합 운영 웹 시스템 개발</strong><br>Node.js 기반 운영 웹사이트를 구축하여 타이틀별 랭킹 조회, More Games 노출 관리, 쿠폰 등록 및 사용 내역을 한곳에서 제어할 수 있는 환경 제공</li>
+              <li><strong>멀티 타이틀 데이터베이스 운영</strong><br>MySQL 기반 공통 플랫폼 DB 스키마 설계 및 다수 게임의 통합 데이터 정합성 유지</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>Node.js</span><span>JavaScript</span><span>Express</span><span>MySQL</span><span>Git</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-5">
+          <h3 id="project-company-5" class="project-company-title">네오위즈에이블스튜디오</h3>
+          <div class="company-projects">
+            <details class="project" id="project-10">
+            <summary>
+              <span class="project-label">
+                <span class="meta">네오위즈에이블스튜디오 · 2018.01 – 2018.04</span>
+                <span class="project-title">HAS</span>
+                <span class="project-caption">1:1 대전 소켓 서버</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>1:1 실시간 전략 보드게임 「HAS」의 저지연 실시간 대전 서버와 웹 기반 운영 시스템을 구축하며, 빠르고 안정적인 멀티플레이 환경을 구현했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-10">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-10">1:1 대전의 매칭과 턴 동기화</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>두 플레이어를 매칭하고, 한쪽에서 진행한 턴을 상대에게 실시간으로 반영해야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>C# SuperSocket으로 대전 로직, 매칭, 턴 동기화를 처리하는 소켓 서버를 설계·구현했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>서버가 1:1 대전 시작부터 턴 진행까지 처리할 수 있게 했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>ASP.NET 기반 웹 운영툴 구축</strong><br>게임 데이터 및 유저 관리를 위한 백오피스 운영 기능을 ASP.NET 기반으로 빠르게 개발하여 서비스 운영 기반 마련</li>
+              <li><strong>데이터 무결성 관리</strong><br>MySQL 기반 게임 및 유저 데이터 관리로 실시간 대전 결과와 상태의 정합성 확보</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>SuperSocket</span><span>ASP.NET</span><span>MySQL</span><span>Git</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-6">
+          <h3 id="project-company-6" class="project-company-title">네오위즈온스튜디오</h3>
+          <div class="company-projects">
+            <details class="project" id="project-11">
+            <summary>
+              <span class="project-label">
+                <span class="meta">네오위즈온스튜디오 · 2017.11 – 2018.04</span>
+                <span class="project-title">쿠크 마법의 레시피2</span>
+                <span class="project-caption">일본 라이브 운영툴과 다중 DB</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>일본에서 라이브 서비스 중인 레스토랑 경영 SNG 「쿠크 마법의 레시피2」의 운영툴 개발 및 다중 데이터베이스 운영을 담당하며, 안정적인 글로벌 라이브 서비스와 정기 업데이트를 지원했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-11">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-11">일본 라이브 서비스의 정기 업데이트 지원</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>일본에서 운영 중인 게임의 정기 콘텐츠 업데이트에 맞춰 운영팀의 작업을 지원해야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>C# WPF 데스크톱 운영툴의 신규 기능을 개발하고 기존 기능을 유지보수했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>운영팀이 정기 업데이트에 필요한 작업을 운영툴에서 처리할 수 있도록 지원했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>이종 다중 DB 데이터 운영</strong><br>MySQL(관계형), Redis(인메모리), Couchbase(NoSQL)로 구성된 복합 데이터베이스 환경에서 게임 및 유저 데이터 무결성 관리</li>
+              <li><strong>일본 라이브 서비스 운영 지원</strong><br>정기 업데이트 배포 지원 및 라이브 이슈·버그 신속 대응을 통한 해외 서비스 안정성 유지</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>WPF</span><span>MySQL</span><span>Redis</span><span>Couchbase</span><span>Git</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-7">
+          <h3 id="project-company-7" class="project-company-title">에스엔게임즈</h3>
+          <div class="company-projects">
+            <details class="project" id="project-12">
+            <summary>
+              <span class="project-label">
+                <span class="meta">에스엔게임즈 · 2017.01 – 2017.11</span>
+                <span class="project-title">갓오브하이스쿨 2017</span>
+                <span class="project-caption">MongoDB 로그의 MySQL 이관</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>네이버 웹툰 IP 기반 수집형 액션 RPG 「갓오브하이스쿨 2017」의 C# 기반 게임 서버 개발과 다중 DB 운영을 담당하며, 서비스 확장성과 데이터 정합성을 확보했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-12">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-12">MongoDB 사용자 로그를 MySQL로 이관</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>NHN 인프라 정책 변경에 따라 MongoDB의 기존 사용자 로그를 MySQL로 옮겨야 했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>MongoDB에 저장된 사용자 로그를 MySQL로 이관하고 기존 데이터를 통합했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>기존 사용자 로그의 무결성을 유지한 채 이관을 완료했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>C# 게임 서버 및 랭킹 시스템 운영</strong><br>WCF 기반 RESTful API 서버 및 신규 콘텐츠 개발, Redis를 활용한 실시간 랭킹 데이터 처리 및 MySQL 유저 데이터 관리</li>
+              <li><strong>GM 운영툴 고도화 및 라이브 대응</strong><br>ASP.NET 및 ServiceStack ORM 기반 웹 운영툴 기능 개선과 정기 업데이트 배포 지원을 통한 라이브 서비스 안정화</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>C#</span><span>ASP.NET</span><span>WCF</span><span>ServiceStack ORM</span><span>MySQL</span><span>Redis</span><span>MongoDB</span><span>Bootstrap</span><span>Kendo UI</span><span>JavaScript</span><span>SVN</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <section class="project-company" aria-labelledby="project-company-8">
+          <h3 id="project-company-8" class="project-company-title">엔트웰</h3>
+          <div class="company-projects">
+            <details class="project" id="project-13">
+            <summary>
+              <span class="project-label">
+                <span class="meta">엔트웰 · 2015.02 – 2016.09</span>
+                <span class="project-title">강철의 기사</span>
+                <span class="project-caption">라이브 운영과 이벤트 데이터 지원</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>서비스 중인 모바일 RPG 「강철의 기사」의 안정적인 라이브 운영과 정기 업데이트를 지원하며 유관 부서의 운영 병목을 해소했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-13">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-13">라이브 이벤트 지표를 기획팀에 제공</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>기획팀이 운영 중인 이벤트를 검토하는 데 게임 내 지표와 운영 데이터가 필요했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>SQL과 저장 프로시저로 이벤트 지표와 운영 데이터를 추출하고 취합했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>기획팀이 취합한 지표를 바탕으로 이벤트 운영을 검토할 수 있도록 지원했습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>레거시 운영툴 유지보수 및 기능 추가</strong><br>Spring, Struts, iBatis 기반 웹 운영툴의 기능 개선 및 정기 업데이트 대응</li>
+              <li><strong>DB 스키마 관리</strong><br>운영 DB 무결성 유지 및 스키마 명세서 현행화를 통한 팀 내 협업 효율 증대</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>Java</span><span>JavaScript</span><span>Spring</span><span>Struts</span><span>iBatis</span><span>MSSQL</span><span>SVN</span><span>Eclipse</span></div>
+            </div>
+          </details>
+            <details class="project" id="project-14">
+            <summary>
+              <span class="project-label">
+                <span class="meta">엔트웰 · 2016.01 – 2016.09</span>
+                <span class="project-title">우리가 영웅이다</span>
+                <span class="project-caption">론칭 운영툴 단독 구축</span>
+              </span>
+              <span class="toggle" aria-hidden="true"><span class="when-closed">자세히 보기</span><span class="when-open">접기</span><span class="toggle-icon"><img class="clay-icon" src="assets/clay-arrow.png" width="21" height="21" alt=""></span></span>
+            </summary>
+            <div class="project-body">
+              <p>신규 수집형 모바일 RPG 「우리가 영웅이다」의 론칭 및 라이브 운영을 위한 웹 기반 관리 시스템(운영툴)을 설계부터 배포까지 단독으로 구축했습니다.</p>
+              <section class="technical-case" aria-labelledby="technical-case-14">
+                <p class="technical-case-label">기술 사례</p>
+                <h4 id="technical-case-14">론칭에 필요한 프로모션 기능 구축</h4>
+                <dl>
+                  <div><dt>문제</dt><dd>신규 모바일 RPG의 론칭을 준비하면서 사전 예약, 인게임 이벤트, 쿠폰 발급 기능이 필요했습니다.</dd></div>
+                  <div><dt>변경 내용</dt><dd>사전 예약 페이지, 인게임 이벤트 페이지, 쿠폰 생성·발급 시스템을 단독 개발했습니다.</dd></div>
+                  <div><dt>결과</dt><dd>론칭 준비 단계부터 사전 예약과 이벤트, 쿠폰 프로모션을 운영할 수 있는 기능을 갖췄습니다.</dd></div>
+                </dl>
+              </section>
+              <ul>
+              <li><strong>웹 운영툴 단독 개발</strong><br>GWT 2.6, Hibernate 기반으로 기획·운영팀이 사용할 게임 관리 도구 전 기능 구현 및 유지보수</li>
+              <li><strong>데이터 운영 및 문서화</strong><br>MSSQL 기반 운영 데이터 관리, 업데이트용 SQL/저장 프로시저 작성 및 DB 스키마 명세서 작성·공유</li>
+              </ul>
+              <p class="stack-label">기술 스택</p>
+              <div class="tags"><span>Java</span><span>JavaScript</span><span>GWT 2.6</span><span>Hibernate</span><span>MSSQL</span><span>SVN</span><span>Eclipse</span></div>
+            </div>
+          </details>
+          </div>
+        </section>
+        <!-- projects:end -->
+      </div>
+    </section>
+    <div class="wrap background-grid">
+      <section class="section" id="career" aria-labelledby="career-title">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> 02 / CAREER</p>
+        <h2 id="career-title">회사별 경력</h2>
+        <ul class="timeline" id="career-timeline">
+          <li><strong>에이시티게임즈</strong><span>2023.04 – 2026.10</span></li>
+          <li><strong>구르는돌</strong><span>2020.04 – 2023.04 · 콘텐츠 파트장</span></li>
+          <li><strong>플렉시마인드</strong><span>2019.03 – 2020.05</span></li>
+          <li><strong>네오위즈</strong><span>2018.04 – 2019.03</span></li>
+          <li><strong>네오위즈에이블스튜디오</strong><span>2018.01 – 2018.04</span></li>
+          <li><strong>네오위즈온스튜디오</strong><span>2017.11 – 2018.01</span></li>
+          <li><strong>에스엔게임즈</strong><span>2017.01 – 2017.11</span></li>
+          <li><strong>엔트웰</strong><span>2015.02 – 2016.09</span></li>
+        </ul>
+      </section>
+      <section class="section" id="education" aria-labelledby="education-title">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> 03 / EDUCATION</p>
+        <h2 id="education-title">학력·자격</h2>
+        <ul class="timeline"><li><strong>한양대학교 인공지능융합대학원</strong><span>2026.03 – 현재 · 재학</span></li><li><strong>한국공학대학교 게임공학과</strong><span>2012.03 – 2015.02 · 학사</span></li><li><strong>자격증</strong><span>SQLD · 리눅스마스터 2급 · 정보처리기사</span></li></ul>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap footer">
+    <div class="footer-contact">
+      <h2>Contact me</h2>
+      <!-- 
+      <span>백가람 · 백엔드 개발자</span>
+      -->
+      <a href="mailto:bgr1017@naver.com">bgr1017@naver.com</a>
+      <ul class="contact-links" id="contact-links" aria-label="외부 링크">
+        <li><span>GitHub</span></li>
+        <li><span>기술 블로그</span></li>
+        <li><a href="https://www.youtube.com/@%EC%8D%B8%EB%B0%A4%EC%9D%B4%EA%B0%80%EB%83%A5%EB%83%A5/shorts">YouTube</a></li>
+      </ul>
+    </div>
+    <a class="back-to-top" href="#top" aria-label="맨 위로" title="맨 위로"><img class="clay-icon clay-arrow-up" src="assets/clay-arrow.png" width="24" height="24" alt=""></a>
+  </footer>
+  <dialog id="image-dialog" aria-label="확대 이미지">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <form method="dialog"><button type="submit" aria-label="확대 이미지 닫기" autofocus>×</button></form>
+      </div>
+      <img width="1672" height="941" alt="백엔드 개발자 백가람의 클레이 스타일 역량 인포그래픽">
+    </div>
+  </dialog>
+  <dialog id="project-editor" aria-labelledby="editor-title">
+    <div class="dialog-inner">
+      <div class="editor-top">
+        <div class="dialog-header">
+          <h2 id="editor-title">프로젝트 편집</h2>
+          <form method="dialog"><button type="submit">닫기 <span aria-hidden="true">×</span></button></form>
+        </div>
+        <div class="project-picker">
+          <div>
+            <label for="project-select">프로젝트 선택</label>
+            <select id="project-select" autofocus></select>
+          </div>
+          <button id="add-project" type="button" aria-label="새 프로젝트 추가" title="새 프로젝트 추가"><img class="clay-icon" src="assets/clay-plus.png" width="24" height="24" alt=""></button>
+        </div>
+      </div>
+      <div class="editor-scroll">
+        <div id="project-fields">
+          <div class="project-fields-grid">
+            <label>프로젝트명 <input data-project-field="title" type="text"></label>
+            <label>회사 <input data-project-field="company" type="text"></label>
+            <label>기간 <input data-project-field="period" type="text" placeholder="예: 2026.01 – 2026.10"></label>
+            <label>대표 기여 또는 성과 <input data-project-field="summary" type="text"></label>
+          </div>
+          <label>프로젝트 소개 <textarea data-project-field="description" rows="3"></textarea></label>
+          <fieldset class="responsibilities">
+            <legend>담당 업무</legend>
+            <div id="responsibility-list"></div>
+            <button id="add-responsibility" type="button"><img class="clay-icon" src="assets/clay-plus.png" width="20" height="20" alt="">담당 업무 추가</button>
+          </fieldset>
+          <label>기술 스택 <span class="editor-hint">(한 줄에 한 개)</span><textarea id="project-stack" rows="3"></textarea></label>
+        </div>
+        <details class="editor-help">
+          <summary>저장 방법</summary>
+          <p id="editor-help">미리보기는 현재 페이지에 적용됩니다. 새로고침 후에도 적용하려면 이 폴더의 <code>projects.json</code>에 저장하고 <code>update-portfolio.bat</code>을 더블클릭하세요.</p>
+        </details>
+      </div>
+      <template id="responsibility-template">
+        <div class="responsibility-row">
+          <label>업무 제목 <input type="text" data-duty-title></label>
+          <label>구현 내용 <textarea rows="2" data-duty-description></textarea></label>
+          <button type="button" data-remove-duty>이 업무 삭제</button>
+        </div>
+      </template>
+      <div class="editor-footer">
+        <div class="editor-actions">
+          <input id="project-file" type="file" accept=".json,application/json" hidden>
+          <button id="open-projects" type="button">JSON 불러오기</button>
+          <button id="apply-projects" type="button">미리보기 적용</button>
+          <button id="save-projects" type="button">JSON 저장</button>
+        </div>
+        <p id="editor-status" role="status"></p>
+      </div>
+    </div>
+  </dialog>
 
-<body>
-
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#workExperience">WorkExperience</a></li>
-							<li class="nav-item"><a class="nav-link" href="#skillStack">SkillStack</a></li>
-							<li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
-							<li class="nav-item"><a class="nav-link" href="https://podo1017.tistory.com/">Tistory</a></li>
-							<!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
-
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Garam Baek</h1>
-							<h5 class="text-uppercase">senior Server developer</h5>
-
-							<!-- 이력서 작성후 추가-->
-							<!-- <div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Download CV (Resume)</span></a>
-								<a class="primary_btn tr-bg" href="#"><span>Contact</span></a>
-							</div> -->
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap" id="about">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img src="img/instar1.png" alt="">
-					</div>
-				</div>
-
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p>
-							안녕하세요, 서버 개발자 백가람입니다. 주로 C#을 사용하여 개발중입니다.
-						</p>
-						<p>
-							현재는 피트니스 앱 '야핏 사이클' 개발팀에서 일하고 있습니다.<br>
-
-							이전에는 다수의 게임 회사에서 서버 프로그래머로 근무하였습니다. <br>
-
-							취미는 복싱, 등산, 여행, 영화감상 등등 다양한 취미를 가지고 있고 <br>
-
-							좌우명은 "Keep Moving" 입니다.
-						</p>
-						<span style="color:#0094ff"> #여행 #운동 #영화감상 #Love고양이 </span>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--================ End About Us Area =================-->
-
-	<!--================ Srart WorkExperience Area =================-->
-		<section class="brand_area section_gap " id="workExperience">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<div class="main_title">
-							<h2>Work Experience</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo2.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo1.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo3.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo4.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6">
-								<div class="single-brand-item d-table">
-									<div class="d-table-cell text-center">
-										<img src="img/brands/logo5.png" alt="">
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="offset-lg-2 col-lg-4 col-md-6">
-						<div class="client-info">
-							<div class="d-flex mb-50">
-								<span class="lage">
-									<script>
-										var totalYear = new Date().getFullYear() - 2015;
-										document.write(totalYear);
-									</script>
-								</span>
-								<span class="smll">Years Experience Working, until now</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	<!--================ End WorkExperience Area =================-->
-
-	<!--================ Start skillStack Area =================-->
-	<section class="features_area section_gap" id="skillStack">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Skill Stack </h2>
-						<p>
-							프로젝트를 하면서 사용했던 언어 및 사용 가능한 기술스택에 대해 기술하였습니다.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center ">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/csharp.jpg" alt="">
-						<h4>C#</h4>
-						<p>
-							● .net core, .net framework <br>
-							● Asp.net, signal R <br>
-							● WCF <br>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/node.jpg" alt="">
-						<h4>Node js</h4>
-						<p>
-							● socket.IO 사용한 실시간 처리<br>
-							● api 서버로 유저 응답 처리</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center ">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/java.png" alt="">
-						<h4>java</h4>
-						<p>
-							● 강철의기사 - 운영툴, spring framework <br>
-							● 다했냥 프로젝트
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/cc.jpg" alt="">
-						<h4>C, C++</h4>
-						<p> 프로그래머의기본! </p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center ">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/my.jpg" alt="">
-						<h4>My SQL</h4>
-						<p>유저 정보나 프로그램 실행에 필요한 데이터를 저장하기 위한 RDB로 사용</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/ms.jpg" alt="">
-						<h4>MS SQL</h4>
-						<p>유저 정보나 프로그램 실행에 필요한 데이터를 저장하기 위한 RDB로 사용</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/skills/redis.jpg" alt="">
-						<h4>Redis</h4>
-						<p> 데이터 캐싱 및 실시간 랭킹 처리</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End skillStack Area =================-->
-
-	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area section_gap" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>Projects</h2>
-					</div>
-				</div>
-			</div>
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".company"> company </li>
-					<li data-filter=".personal"> personal</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-
-				<!-- =============== first row =============== -->
-				<div class="row portfolio-grid justify-content-center">
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p1.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html"> Yafit.Cycle</a></h4> <br>
-								<p>
-									신개념 메타버스 홈트레이닝! <br>
-									<br>
-									● 장르 : 홈트레이닝앱 <br>
-									● 서비스 국가 : 한국 <br>
-									● 운동 + 동기부여로 구성된 앱 <br><br>
-
-									<span style="color:#0d6e02"> 서비스 진행중</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p4.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">아일랜드M</a></h4><br>
-								<p>
-									양경일, 윤인완 콤비의 '아일랜드' 웹툰 기반으로 만든 게임 <br>
-									<br>
-
-									● 장르 : 수집형 RPG <br>
-									● 서비스 국가 : 한국 <br><br>
-
-									<span style="color:#0d6e02"> 서비스 진행중</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p3.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p3.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">쿠크 마법의 레시피2(新 クックと魔法のレシピ おかわり)</a></h4><br>
-								<p>
-									레시피를 모아 레스토랑을 운영하는 게임<br><br>
-
-									● 장르 : 경영, 소셜 게임 <br>
-									● 서비스 국가 : 일본 <br><br>
-
-									<span style="color:#6e0202"> 서비스 종료</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- =============== first row =============== -->
-
-				<!-- =============== second row =============== -->
-				<div class="row portfolio-grid justify-content-center">
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p2.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">포켓 히어로즈 아레나</a></h4> <br>
-								<p>
-									귀여운 영웅들을 모아 전투하는 모바일 슈팅 게임 <br><br>
-
-									● 장르 : 3 vs 3 AOS 게임 <br>
-									● 서비스 국가 : 한국 <br><br>
-
-									<span style="color:#6e0202"> 서비스 종료</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p6.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">강철의 기사</a></h4><br>
-								<p>
-									영웅 수집형 모바일 액션 RPG <br><br>
-
-									● 장르 : 모바일 액션 RPG <br>
-									● 서비스 국가 : 글로벌 <br><br>
-
-									<span style="color:#6e0202"> 서비스 종료</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 all company">
-
-					</div>
-
-					<div class="col-lg-4 col-md-6 all company">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p5.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">갓오하</a></h4><br>
-								<p>
-									네이버 웹툰 '갓오브하이스쿨' 아이피로 제작한 액션 게임 <br><br>
-
-									● 장르 : 수집형 RPG <br>
-									● 서비스 국가 : 한국 <br><br>
-
-									<span style="color:#0d6e02"> 서비스 진행중</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- =============== second row end =============== -->
-
-				<!-- =============== third row end =============== -->
-				<div class="row portfolio-grid justify-content-center">
-
-					<div class="col-lg-4 col-md-6 all personal">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p7.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">다했냥</a></h4><br>
-								<p>
-									데일리 Todo app <br><br>
-
-									<span style="color:#0011ff"> 개발 진행중</span><br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="row">
-
-	</div>
-	<!--================End Portfolio Area =================-->
-
-
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Newsletter Area =================-->
-
-	<!--================ End Newsletter Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-						</div>
-						<!-- <div class="footer_social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+  <script id="project-data" type="application/json">
+[
+  {
+    "title": "헬로키티 솔리테어",
+    "company": "에이시티게임즈",
+    "period": "2026.02 – 2026.10",
+    "summary": "메인 서버 단독 설계와 오프라인 동기화",
+    "description": "헬로키티 IP 기반 모바일 게임 「헬로키티 솔리테어」의 메인 서버 아키텍처 설계부터 백오피스, AWS 클라우드 및 CI/CD 구축까지 백엔드 전 영역을 단독으로 완수했습니다.",
+    "responsibilities": [
+      {
+        "title": "Redis 분산 잠금 기반 동시성 제어 및 데이터 정합성 확보",
+        "description": "MySQL 게임 데이터 모델링과 Redis 세션·캐시 구조를 설계하고, Redis 분산 잠금(Distributed Lock) 및 서버 검증 로직을 적용해 중복 요청·어뷰징 원천 차단"
+      },
+      {
+        "title": "라이브 백오피스 및 AWS·Jenkins 자동 배포 환경 구축",
+        "description": "라이브 운영용 신규 백오피스 개발, AWS EC2(Linux) 운영 환경 구성 및 Jenkins 기반 CI/CD 배포 파이프라인 구축"
+      },
+      {
+        "title": "생성형 AI(Claude) 기반 개발 생산성 및 코드 품질 고도화",
+        "description": "AI를 활용한 서버 기능 구현·리팩터링·기술 문서화와 엔지니어 기술 검증 프로세스를 결합해 단독 개발 속도 및 코드 안정성 극대화"
+      }
+    ],
+    "techStack": [
+      "C#",
+      ".NET(Web API)",
+      "MySQL",
+      "Redis",
+      "AWS EC2(Linux)",
+      "Jenkins",
+      "Claude",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "오프라인 플레이 후 재접속 시 게임 데이터 동기화",
+      "problem": "오프라인 플레이를 지원하면서 재접속한 계정의 게임 데이터를 서버와 동기화해야 했습니다.",
+      "solution": ".NET Web API 기반 REST API 서버를 단독 개발하고, AccountId를 기준으로 세션을 관리하도록 설계했습니다.",
+      "result": "오프라인 플레이 후 재접속해 서버 데이터와 동기화할 수 있는 구조를 구현했습니다."
+    }
+  },
+  {
+    "title": "Transformers : Multi Shock",
+    "company": "에이시티게임즈",
+    "period": "2025.01 – 2026.03",
+    "summary": "gRPC 도입과 아웃게임 서버 개발",
+    "description": "타카라토미 IP 기반 로그라이크 액션 모바일 게임 「Transformers」의 아웃게임 API 서버와 Blazor 기반 웹 백오피스를 개발하고, 차세대 통신 프레임워크(MagicOnion) 도입 및 배포 자동화를 구축했습니다.",
+    "responsibilities": [
+      {
+        "title": "아웃게임 API 및 Blazor 기반 웹 백오피스 개발",
+        "description": "MySQL·Redis 기반 사용자 데이터 및 아웃게임 콘텐츠 API를 구현하고, Blazor와 MudBlazor를 활용한 라이브 서비스 관리용 웹 백오피스 구축"
+      },
+      {
+        "title": "Jenkins·Ansible 기반 배포 자동화 파이프라인 구축",
+        "description": "반복적인 서버 빌드 및 배포 공수를 제거하기 위해 Jenkins와 Ansible을 연계한 배포 자동화 환경 구현"
+      }
+    ],
+    "techStack": [
+      "C#",
+      ".NET Core",
+      "gRPC",
+      "MagicOnion",
+      "Blazor",
+      "MudBlazor",
+      "Unity",
+      "MySQL",
+      "Redis",
+      "AWS EC2(Linux)",
+      "Jenkins",
+      "Ansible",
+      "Confluence",
+      "GitLab"
+    ],
+    "technicalCase": {
+      "title": "Unity 테스트 클라이언트로 gRPC 통신 검증",
+      "problem": "실시간 통신에 사용할 gRPC 기반 MagicOnion을 도입하기 전에 게임 클라이언트에서 통신 구조를 검증해야 했습니다.",
+      "solution": "Unity 테스트 클라이언트를 직접 개발해 통신 구조를 검증했습니다.",
+      "result": "MagicOnion을 도입하고, 통신 구조를 Confluence에 문서화하고 Git으로 팀에 공유했습니다."
+    }
+  },
+  {
+    "title": "ZOIDS Wild Arena",
+    "company": "에이시티게임즈",
+    "period": "2023.04 – 2025.02",
+    "summary": "정기 점검 3시간 → 30분",
+    "description": "타카라토미 IP 기반 글로벌 Web3/NFT 트레이딩 카드 게임 「ZOIDS Wild Arena」의 라이브 서비스 서버 개발과 병목 구간 성능 최적화, 모니터링 및 운영 표준화를 수행했습니다.",
+    "technicalCase": {
+      "title": "랭킹 정산 개선으로 정기 점검 단축",
+      "problem": "라이브 서비스의 정기 점검에 3시간이 걸렸습니다.",
+      "solution": "대용량 데이터 정산에 쓰이는 DB 쿼리를 튜닝하고, 랭킹 집계 로직을 개선했습니다.",
+      "result": "정기 점검 소요 시간이 3시간에서 30분으로 줄었습니다. 약 83% 단축입니다."
+    },
+    "responsibilities": [
+      {
+        "title": "매칭 알고리즘 개선 및 통신 구조 고도화",
+        "description": "라이브 서비스 서버 개발 및 서버-클라이언트 통신 구조 개선, 매칭 알고리즘 최적화를 통한 유저 매칭 대기 시간 단축 및 안정성 확보"
+      },
+      {
+        "title": "Grafana 인프라 모니터링 구축 및 운영 문서 표준화",
+        "description": "Grafana 기반 AWS EC2 실시간 모니터링 및 장애 알림 체계를 구축하고, DB 스키마 명세서·패킷 정의서·인프라 운영 가이드를 표준화하여 팀 협업 효율 극대화"
+      }
+    ],
+    "techStack": [
+      "C#",
+      "Node.js",
+      "Socket.IO",
+      "MySQL",
+      "Redis",
+      "AWS EC2(Linux)",
+      "Grafana",
+      "Git"
+    ]
+  },
+  {
+    "title": "야핏 사이클",
+    "company": "구르는돌",
+    "period": "2020.04 – 2023.04",
+    "summary": "실시간 멀티플레이와 콘텐츠 파트 리딩",
+    "description": "실내 자전거와 메타버스를 결합한 실시간 홈트레이닝 플랫폼 「야핏 사이클」의 콘텐츠 파트장으로서, SignalR 기반 실시간 멀티플레이 서버 개발과 핵심 서비스 콘텐츠 구현 및 팀 리딩을 주도했습니다.",
+    "responsibilities": [
+      {
+        "title": "실시간 레이싱 및 리텐션 콘텐츠 개발",
+        "description": "스피드·RPM·이벤트 레이싱, 프리 라이딩 등 실시간 트랙 콘텐츠와 업적, 미션, 멤버십, 상점, 친구, 클럽, 운동 추천 시스템 등 핵심 아웃게임(WCF RESTful API) 개발"
+      },
+      {
+        "title": "콘텐츠 파트 리딩 및 코드 품질 관리",
+        "description": "파트원 업무 분배, 개발 일정 관리, 코드 리뷰를 수행하고 기획·클라이언트·QA 직군과 협업하여 신규 콘텐츠 라이브 업데이트 관리"
+      }
+    ],
+    "techStack": [
+      "C#",
+      ".NET Framework",
+      "WCF",
+      "SignalR",
+      "MySQL",
+      "Redis",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "같은 가상 트랙에서 실시간 동시 라이딩",
+      "problem": "여러 사용자가 하나의 가상 트랙에서 동시에 달리고 채팅할 수 있어야 했습니다.",
+      "solution": "C#과 SignalR로 실시간 트랙 서버와 채팅 서버를 각각 구현했습니다.",
+      "result": "사용자가 같은 가상 트랙에서 함께 라이딩하고 실시간으로 채팅할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "야핏 사이클 · 서비스 연동",
+    "company": "구르는돌",
+    "period": "2020.04 – 2023.04",
+    "summary": "야나두 연동 API와 라이브 인프라",
+    "description": "자사 에듀테크 플랫폼(야나두)과의 서비스 통합 연동 API를 .NET Core 기반으로 구축하고, 서비스 운영 백오피스 개발 및 AWS 클라우드 라이브 인프라 운영을 담당했습니다.",
+    "responsibilities": [
+      {
+        "title": "운영 백오피스 고도화 및 데이터 처리",
+        "description": "ASP.NET 기반 관리자 웹 시스템 기능 개발, Redis 기반 실시간 랭킹·캐시 처리 및 MySQL 기반 회원·결제·운동 데이터 무결성 관리"
+      },
+      {
+        "title": "AWS 인프라 운영 및 무중단 라이브 대응",
+        "description": "AWS EC2(Windows) 및 Jenkins 기반 배포·운영 환경 관리, 정기 점검 및 라이브 서비스 장애 신속 대응"
+      }
+    ],
+    "techStack": [
+      "C#",
+      ".NET Core",
+      ".NET Framework",
+      "ASP.NET",
+      "MySQL",
+      "Redis",
+      "AWS EC2(Windows)",
+      "IIS",
+      "Jenkins",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "야핏과 야나두 간 계정·데이터 연동",
+      "problem": "야핏 사이클과 야나두는 서로 다른 플랫폼으로, 계정과 데이터를 주고받을 연결 지점이 필요했습니다.",
+      "solution": ".NET Core로 계정과 데이터를 연동하는 API를 설계·개발하고 IIS 환경에 배포했습니다.",
+      "result": "두 서비스가 API를 통해 계정과 데이터를 연동할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "야핏 사이클 · 데이터 분석",
+    "company": "구르는돌",
+    "period": "2020.04 – 2023.04",
+    "summary": "운동 데이터 수집과 CS 분석",
+    "description": "실시간 라이딩 중 발생하는 대용량 운동 데이터와 사용자 활동 로그를 수집·분석하기 위해 Elastic Stack(ELK) 파이프라인을 구축하여 데이터 기반 운영과 CS 대응 효율을 높였습니다.",
+    "responsibilities": [],
+    "techStack": [
+      "Elastic Stack(ELK)",
+      "C#",
+      "ASP.NET",
+      "MySQL"
+    ],
+    "technicalCase": {
+      "title": "라이딩 로그를 운영과 고객 문의 대응에 활용",
+      "problem": "라이딩 중 쌓이는 운동 데이터와 사용자 활동 로그에서 개인별 기록을 확인하고 이상 데이터를 검증해야 했습니다.",
+      "solution": "Elastic Stack(Elasticsearch, Logstash, Kibana)으로 로그를 실시간 수집·색인하고 운동 기록을 조회하는 대시보드를 구축했습니다.",
+      "result": "운영팀이 대시보드에서 개인별 기록과 이상 데이터를 확인해 고객 문의에 대응할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "아일랜드",
+    "company": "플렉시마인드",
+    "period": "2019.03 – 2020.05",
+    "summary": "실시간 레이드와 로그 분석",
+    "description": "인기 만화 IP 기반 수집형 턴제 모바일 RPG 「아일랜드」의 백엔드 시스템을 구축하며, 신규 도입 기술인 Elastic Stack(ELK)과 SignalR의 R&D부터 아키텍처 설계, 프로덕션 적용까지 직접 주도하여 라이브 운영 효율과 실시간 콘텐츠 확장성을 확보했습니다.",
+    "responsibilities": [
+      {
+        "title": "SignalR 기술 검증(R&D) 및 실시간 보스 레이드·채팅 서버 구축",
+        "description": "다수 유저 간 실시간 양방향 통신을 위해 SignalR을 R&D하여 프로덕션에 도입, 실시간 보스 레이드 및 채팅 서버와 WCF 기반 RESTful API 서버 구현"
+      },
+      {
+        "title": "운영 백오피스 및 인메모리 데이터 처리",
+        "description": "ASP.NET 기반 관리자 웹 시스템 개발과 Redis를 활용한 실시간 랭킹·캐싱 처리, MySQL 기반 유저 데이터 무결성 관리"
+      },
+      {
+        "title": "AWS 클라우드 인프라 운영 및 서비스 배포",
+        "description": "AWS EC2(Windows) 및 IIS 기반 서버 인프라 구축·운영을 통한 안정적인 라이브 서비스 배포 환경 유지"
+      }
+    ],
+    "techStack": [
+      "C#",
+      ".NET Framework",
+      "ASP.NET",
+      "WCF",
+      "SignalR",
+      "MySQL",
+      "Redis",
+      "Elastic Stack(ELK)",
+      "AWS EC2(Windows)",
+      "IIS",
+      "Bootstrap",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "운영 백오피스에서 사용자 로그 확인",
+      "problem": "라이브 운영 중 사용자 로그를 수집하고, 고객 문의에 필요한 데이터를 운영팀이 확인할 수 있어야 했습니다.",
+      "solution": "Elastic Stack을 직접 검토·도입해 로그 수집과 시각화 파이프라인을 구축하고, 운영 백오피스에 연계했습니다.",
+      "result": "운영 과정에서 수집한 사용자 로그를 고객 문의 대응과 데이터 분석에 활용할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "히어로즈 : 포켓 아레나",
+    "company": "네오위즈",
+    "period": "2018.08 – 2019.03",
+    "summary": "Node.js 아웃게임 API와 운영툴",
+    "description": "3:3 실시간 PvP 대전 모바일 게임 「히어로즈 : 포켓 아레나」의 아웃게임 RESTful API 서버와 웹 운영툴 개발 및 AWS 클라우드 배포까지 전 과정을 구축했습니다.",
+    "responsibilities": [
+      {
+        "title": "종합 웹 운영툴 구축 및 AWS EC2 배포",
+        "description": "Node.js 기반 운영툴에서 앱·게임 데이터, 유저 정보, 캐릭터, 상자, 우편, 랭킹, 퀘스트 등 라이브 운영 전 기능을 구현하고 AWS EC2(Linux) 환경에 직접 배포·운영"
+      },
+      {
+        "title": "게임 데이터 무결성 관리",
+        "description": "MySQL 기반 유저 및 인게임 성장·보상 데이터 설계 및 안정적인 트랜잭션 처리"
+      }
+    ],
+    "techStack": [
+      "Node.js",
+      "JavaScript",
+      "Express",
+      "MySQL",
+      "AWS EC2(Linux)",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "성장·보상·랭킹을 처리하는 아웃게임 API",
+      "problem": "실시간 대전 외에 사용자 성장, 보상, 랭킹을 처리하는 서버 기능이 필요했습니다.",
+      "solution": "Node.js와 Express로 기능별 REST API를 설계하고 서버에 해당 비즈니스 로직을 구현했습니다.",
+      "result": "클라이언트가 API를 통해 사용자 성장, 보상, 랭킹 기능을 사용할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "Mobile Grilled Onion 공통 플랫폼",
+    "company": "네오위즈",
+    "period": "2018.07 – 2019.03",
+    "summary": "멀티 타이틀 공용 API와 운영 시스템",
+    "description": "스튜디오 내 다수의 미니게임 타이틀이 공통으로 사용하는 백엔드 플랫폼 API와 통합 운영 시스템을 설계·구축하여 신규 게임 개발 공수를 절감하고 운영 효율을 극대화했습니다.",
+    "responsibilities": [
+      {
+        "title": "통합 운영 웹 시스템 개발",
+        "description": "Node.js 기반 운영 웹사이트를 구축하여 타이틀별 랭킹 조회, More Games 노출 관리, 쿠폰 등록 및 사용 내역을 한곳에서 제어할 수 있는 환경 제공"
+      },
+      {
+        "title": "멀티 타이틀 데이터베이스 운영",
+        "description": "MySQL 기반 공통 플랫폼 DB 스키마 설계 및 다수 게임의 통합 데이터 정합성 유지"
+      }
+    ],
+    "techStack": [
+      "Node.js",
+      "JavaScript",
+      "Express",
+      "MySQL",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "여러 게임에서 재사용하는 백엔드 API",
+      "problem": "스튜디오의 여러 미니게임에 랭킹, 구독, 프로모션, 쿠폰 같은 공통 기능이 필요했습니다.",
+      "solution": "Node.js와 Express로 랭킹, 구독, 교차 프로모션, 쿠폰 발급·검증을 공용 API 모듈로 만들었습니다.",
+      "result": "신규 타이틀에서 같은 기능을 다시 구현하는 공수를 줄였습니다."
+    }
+  },
+  {
+    "title": "HAS",
+    "company": "네오위즈에이블스튜디오",
+    "period": "2018.01 – 2018.04",
+    "summary": "1:1 대전 소켓 서버",
+    "description": "1:1 실시간 전략 보드게임 「HAS」의 저지연 실시간 대전 서버와 웹 기반 운영 시스템을 구축하며, 빠르고 안정적인 멀티플레이 환경을 구현했습니다.",
+    "responsibilities": [
+      {
+        "title": "ASP.NET 기반 웹 운영툴 구축",
+        "description": "게임 데이터 및 유저 관리를 위한 백오피스 운영 기능을 ASP.NET 기반으로 빠르게 개발하여 서비스 운영 기반 마련"
+      },
+      {
+        "title": "데이터 무결성 관리",
+        "description": "MySQL 기반 게임 및 유저 데이터 관리로 실시간 대전 결과와 상태의 정합성 확보"
+      }
+    ],
+    "techStack": [
+      "C#",
+      "SuperSocket",
+      "ASP.NET",
+      "MySQL",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "1:1 대전의 매칭과 턴 동기화",
+      "problem": "두 플레이어를 매칭하고, 한쪽에서 진행한 턴을 상대에게 실시간으로 반영해야 했습니다.",
+      "solution": "C# SuperSocket으로 대전 로직, 매칭, 턴 동기화를 처리하는 소켓 서버를 설계·구현했습니다.",
+      "result": "서버가 1:1 대전 시작부터 턴 진행까지 처리할 수 있게 했습니다."
+    }
+  },
+  {
+    "title": "쿠크 마법의 레시피2",
+    "company": "네오위즈온스튜디오",
+    "period": "2017.11 – 2018.04",
+    "summary": "일본 라이브 운영툴과 다중 DB",
+    "description": "일본에서 라이브 서비스 중인 레스토랑 경영 SNG 「쿠크 마법의 레시피2」의 운영툴 개발 및 다중 데이터베이스 운영을 담당하며, 안정적인 글로벌 라이브 서비스와 정기 업데이트를 지원했습니다.",
+    "responsibilities": [
+      {
+        "title": "이종 다중 DB 데이터 운영",
+        "description": "MySQL(관계형), Redis(인메모리), Couchbase(NoSQL)로 구성된 복합 데이터베이스 환경에서 게임 및 유저 데이터 무결성 관리"
+      },
+      {
+        "title": "일본 라이브 서비스 운영 지원",
+        "description": "정기 업데이트 배포 지원 및 라이브 이슈·버그 신속 대응을 통한 해외 서비스 안정성 유지"
+      }
+    ],
+    "techStack": [
+      "C#",
+      "WPF",
+      "MySQL",
+      "Redis",
+      "Couchbase",
+      "Git"
+    ],
+    "technicalCase": {
+      "title": "일본 라이브 서비스의 정기 업데이트 지원",
+      "problem": "일본에서 운영 중인 게임의 정기 콘텐츠 업데이트에 맞춰 운영팀의 작업을 지원해야 했습니다.",
+      "solution": "C# WPF 데스크톱 운영툴의 신규 기능을 개발하고 기존 기능을 유지보수했습니다.",
+      "result": "운영팀이 정기 업데이트에 필요한 작업을 운영툴에서 처리할 수 있도록 지원했습니다."
+    }
+  },
+  {
+    "title": "갓오브하이스쿨 2017",
+    "company": "에스엔게임즈",
+    "period": "2017.01 – 2017.11",
+    "summary": "MongoDB 로그의 MySQL 이관",
+    "description": "네이버 웹툰 IP 기반 수집형 액션 RPG 「갓오브하이스쿨 2017」의 C# 기반 게임 서버 개발과 다중 DB 운영을 담당하며, 서비스 확장성과 데이터 정합성을 확보했습니다.",
+    "responsibilities": [
+      {
+        "title": "C# 게임 서버 및 랭킹 시스템 운영",
+        "description": "WCF 기반 RESTful API 서버 및 신규 콘텐츠 개발, Redis를 활용한 실시간 랭킹 데이터 처리 및 MySQL 유저 데이터 관리"
+      },
+      {
+        "title": "GM 운영툴 고도화 및 라이브 대응",
+        "description": "ASP.NET 및 ServiceStack ORM 기반 웹 운영툴 기능 개선과 정기 업데이트 배포 지원을 통한 라이브 서비스 안정화"
+      }
+    ],
+    "techStack": [
+      "C#",
+      "ASP.NET",
+      "WCF",
+      "ServiceStack ORM",
+      "MySQL",
+      "Redis",
+      "MongoDB",
+      "Bootstrap",
+      "Kendo UI",
+      "JavaScript",
+      "SVN"
+    ],
+    "technicalCase": {
+      "title": "MongoDB 사용자 로그를 MySQL로 이관",
+      "problem": "NHN 인프라 정책 변경에 따라 MongoDB의 기존 사용자 로그를 MySQL로 옮겨야 했습니다.",
+      "solution": "MongoDB에 저장된 사용자 로그를 MySQL로 이관하고 기존 데이터를 통합했습니다.",
+      "result": "기존 사용자 로그의 무결성을 유지한 채 이관을 완료했습니다."
+    }
+  },
+  {
+    "title": "강철의 기사",
+    "company": "엔트웰",
+    "period": "2015.02 – 2016.09",
+    "summary": "라이브 운영과 이벤트 데이터 지원",
+    "description": "서비스 중인 모바일 RPG 「강철의 기사」의 안정적인 라이브 운영과 정기 업데이트를 지원하며 유관 부서의 운영 병목을 해소했습니다.",
+    "responsibilities": [
+      {
+        "title": "레거시 운영툴 유지보수 및 기능 추가",
+        "description": "Spring, Struts, iBatis 기반 웹 운영툴의 기능 개선 및 정기 업데이트 대응"
+      },
+      {
+        "title": "DB 스키마 관리",
+        "description": "운영 DB 무결성 유지 및 스키마 명세서 현행화를 통한 팀 내 협업 효율 증대"
+      }
+    ],
+    "techStack": [
+      "Java",
+      "JavaScript",
+      "Spring",
+      "Struts",
+      "iBatis",
+      "MSSQL",
+      "SVN",
+      "Eclipse"
+    ],
+    "technicalCase": {
+      "title": "라이브 이벤트 지표를 기획팀에 제공",
+      "problem": "기획팀이 운영 중인 이벤트를 검토하는 데 게임 내 지표와 운영 데이터가 필요했습니다.",
+      "solution": "SQL과 저장 프로시저로 이벤트 지표와 운영 데이터를 추출하고 취합했습니다.",
+      "result": "기획팀이 취합한 지표를 바탕으로 이벤트 운영을 검토할 수 있도록 지원했습니다."
+    }
+  },
+  {
+    "title": "우리가 영웅이다",
+    "company": "엔트웰",
+    "period": "2016.01 – 2016.09",
+    "summary": "론칭 운영툴 단독 구축",
+    "description": "신규 수집형 모바일 RPG 「우리가 영웅이다」의 론칭 및 라이브 운영을 위한 웹 기반 관리 시스템(운영툴)을 설계부터 배포까지 단독으로 구축했습니다.",
+    "responsibilities": [
+      {
+        "title": "웹 운영툴 단독 개발",
+        "description": "GWT 2.6, Hibernate 기반으로 기획·운영팀이 사용할 게임 관리 도구 전 기능 구현 및 유지보수"
+      },
+      {
+        "title": "데이터 운영 및 문서화",
+        "description": "MSSQL 기반 운영 데이터 관리, 업데이트용 SQL/저장 프로시저 작성 및 DB 스키마 명세서 작성·공유"
+      }
+    ],
+    "techStack": [
+      "Java",
+      "JavaScript",
+      "GWT 2.6",
+      "Hibernate",
+      "MSSQL",
+      "SVN",
+      "Eclipse"
+    ],
+    "technicalCase": {
+      "title": "론칭에 필요한 프로모션 기능 구축",
+      "problem": "신규 모바일 RPG의 론칭을 준비하면서 사전 예약, 인게임 이벤트, 쿠폰 발급 기능이 필요했습니다.",
+      "solution": "사전 예약 페이지, 인게임 이벤트 페이지, 쿠폰 생성·발급 시스템을 단독 개발했습니다.",
+      "result": "론칭 준비 단계부터 사전 예약과 이벤트, 쿠폰 프로모션을 운영할 수 있는 기능을 갖췄습니다."
+    }
+  }
+]
+</script>
 </body>
-
 </html>
