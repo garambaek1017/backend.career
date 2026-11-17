@@ -1,11 +1,11 @@
-import './project-renderer.js';
+import '../project-renderer.js';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { renderCareer } from './career.mjs';
 
-const dataFile = new URL('./projects.json', import.meta.url);
-const careerFile = new URL('./career.json', import.meta.url);
-const linksFile = new URL('./links.json', import.meta.url);
-const pageFile = new URL('./index.html', import.meta.url);
+const dataFile = new URL('../data/projects.json', import.meta.url);
+const careerFile = new URL('../data/career.json', import.meta.url);
+const linksFile = new URL('../data/links.json', import.meta.url);
+const pageFile = new URL('../index.html', import.meta.url);
 
 function renderContactLinks(links) {
   if (!links || typeof links !== 'object' || Array.isArray(links)) {

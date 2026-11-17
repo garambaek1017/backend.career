@@ -192,7 +192,7 @@ document.querySelector('#save-projects').addEventListener('click', async () => {
     link.download = 'projects.json';
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    editorStatus.textContent = 'JSON을 다운로드했습니다. 프로젝트 폴더에 저장한 뒤 HTML에 반영하세요.';
+    editorStatus.textContent = '다운로드한 파일을 data/projects.json에 저장한 뒤 update-portfolio.bat을 실행하세요.';
   } catch (error) {
     editorStatus.textContent = `저장할 수 없습니다: ${error.message}`;
   }

@@ -4,7 +4,7 @@ pushd "%~dp0" || goto folder_error
 where node.exe >nul 2>&1
 if errorlevel 1 goto node_error
 
-node "%~dp0update-projects.mjs"
+node "%~dp0scripts\update-projects.mjs"
 set "update_result=%errorlevel%"
 popd
 if not "%update_result%"=="0" goto update_error
